@@ -1,0 +1,54 @@
+package com.chandra.problems;
+
+import com.chandra.common.TreeNode;
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Queue;
+
+/**
+ * 102. Binary Tree Level Order Traversal
+ *
+ * Given a binary tree, return the level order traversal of its nodes' values. (ie, from left to right, level by level).
+ * For example:
+ *
+ * Given binary tree [3,9,20,null,null,15,7],
+ * 3
+ * / \
+ * 9  20
+ * /  \
+ * 15   7
+ *
+ * return its level order traversal as:
+ * [
+ * [3],
+ * [9,20],
+ * [15,7]
+ * ]
+ */
+
+public class Problem_102 {
+    public static class Solution1 {
+        public List<List<Integer>> levelOrder(TreeNode root) {
+            List<List<Integer>> result = new ArrayList<>();
+            if (root == null) return result;
+            Queue<TreeNode> q = new LinkedList<>();
+            q.offer(root);
+
+            while (!q.isEmpty()) {
+                int size = q.size();
+                List<Integer> level = new ArrayList<>();
+                while (size > 0) {
+                    TreeNode node = q.poll();
+                    level.add(node.val);
+                    if (node.left != null) q.offer(node.left);
+                    if (node.right != null) q.offer(node.right);
+                    size--;
+                }
+                result.add(level);
+            }
+            return result;
+        }
+    }
+}
