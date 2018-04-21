@@ -11,5 +11,6 @@
 |15|[Roman To Integer](https://leetcode.com/problems/roman-to-integer)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_13.java)|O(1)|O(1)|Easy|Math,String|FB
 |102|[Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/description/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_102.java)|O(n| O(h) | Medium |BFS | FB
 |121|[Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_121.java)|O(n)|O(1)|Easy| Array |FB
-|125|[Valid Palindrome](https://leetcode.com/problems/valid-palindrome/description/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_125.java)|O(n)|O(1)|Easy| Two Pointers|FB
-|125|[Word Ladder](https://leetcode.com/problems/word-ladder/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_127.java)|O(n^2)|O(n)|Medium| BFS |FB
+|125|[Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_125.java)|O(n)|O(1)|Easy| Two Pointers|FB
+|127|[Word Ladder](https://leetcode.com/problems/word-ladder/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_127.java)|O(n^2)|O(n)|Medium| BFS |FB
+|128|[Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_128.java)|O(n) or O(n*m)|O(n)|Hard|  |FB
