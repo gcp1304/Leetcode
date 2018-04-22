@@ -14,3 +14,4 @@
 |125|[Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_125.java)|O(n)|O(1)|Easy| Two Pointers|FB
 |127|[Word Ladder](https://leetcode.com/problems/word-ladder/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_127.java)|O(n^2)|O(n)|Medium| BFS |FB
 |128|[Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_128.java)|O(n) or O(n*m)|O(n)|Hard|  |FB
+|139|[Word Break](https://leetcode.com/problems/word-break/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_139.java)|O(n^3) or O(n^2)|O(n)|Medium| DP, BFS |FB
