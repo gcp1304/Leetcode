@@ -19,4 +19,4 @@
 
 
 
-# Inspired by fishercoder1534's problem practising. Also borrowed few solutions from fishercoder1534. Thank you for the wonderful solutions
+Inspired by fishercoder1534's problem practising. Also borrowed few solutions from fishercoder1534. Thank you for the wonderful solutions
