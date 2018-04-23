@@ -21,5 +21,6 @@
 |168|[Excel Sheet Column Title](https://leetcode.com/problems/excel-sheet-column-title)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_168.java)|O(n) | O(1) | Easy| | FB
 |173|[Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_173.java)|O(1) | O(h) | Medium| Stack | FB
 |200|[Number of Islands](https://leetcode.com/problems/number-of-islands)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_200.java)|O(m*n) | O(m*n) | Medium| DFS | FB
+|206|[Reverse Linked List](https://leetcode.com/problems/reverse-linked-list)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_206.java)|O(n) | O(1) | Easy| Linked List | FB
 
 Inspired by fishercoder1534's problem practising. Also borrowed few solutions from fishercoder1534. Thank you for the wonderful solutions
