@@ -16,6 +16,7 @@
 |139|[Word Break](https://leetcode.com/problems/word-break/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_139.java)|O(n^3) or O(n^2)|O(n)|Medium| DP, BFS |FB
 |146|[LRU Cache](https://leetcode.com/problems/lru-cache/) | [Solution](./problems/src/main/java/com/chandra/problems/Problem_146.java)|amortized O(1) | O(k) | Hard| Doubly Linked List, HashMap| FB
 |*161|[One Edit Distance](https://leetcode.com/problems/one-edit-distance/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_161.java)|O(n) | O(1) | Easy| | FB
+|168|[Excel Sheet Column Title](https://leetcode.com/problems/excel-sheet-column-title)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_168.java)|O(n) | O(1) | Easy| | FB
 
 
 
