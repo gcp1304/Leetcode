@@ -18,7 +18,7 @@
 |146|[LRU Cache](https://leetcode.com/problems/lru-cache/) | [Solution](./problems/src/main/java/com/chandra/problems/Problem_146.java)|amortized O(1) | O(k) | Hard| Doubly Linked List, HashMap| FB
 |*161|[One Edit Distance](https://leetcode.com/problems/one-edit-distance/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_161.java)|O(n) | O(1) | Easy| | FB
 |168|[Excel Sheet Column Title](https://leetcode.com/problems/excel-sheet-column-title)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_168.java)|O(n) | O(1) | Easy| | FB
-
+|173|[Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_173.java)|O(1) | O(h) | Medium| Stack | FB
 
 
 Inspired by fishercoder1534's problem practising. Also borrowed few solutions from fishercoder1534. Thank you for the wonderful solutions
