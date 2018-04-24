@@ -1,11 +1,22 @@
 package com.chandra.problems;
 
 import java.util.Arrays;
-import java.util.Comparator;
 import java.util.PriorityQueue;
 import java.util.Queue;
-import java.util.function.ToIntFunction;
 
+
+/**
+ * 215. Kth Largest Element in an Array
+ *
+ * Find the kth largest element in an unsorted array. Note that it is the kth largest element in the sorted order,
+ * not the kth distinct element.
+ *
+ * For example,
+ * Given [3,2,1,5,6,4] and k = 2, return 5.
+ *
+ * Note:
+ * You may assume k is always valid, 1 ≤ k ≤ array's length.
+ */
 public class Problem_215 {
 
     public static class Solution1 {
@@ -40,7 +51,7 @@ public class Problem_215 {
     // Depending on pivot selection strategy, time complexity can be reduced to O(n)
     public static class Solution3 {
         public int findKthLargest(int[] nums, int k) {
-            int start = 0, end = nums.length-1, index = nums.length-k;
+            int start = 0, end = nums.length - 1, index = nums.length - k;
 
             while (start < end) {
                 int pivot = partition(nums, start, end);
