@@ -32,5 +32,10 @@
 |235|[Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_235.java)|O(h)|O(1)|Easy|BST, DFS|FB
 |236|[Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_236.java)|O(n)|O(h)|Medium|BST, DFS|FB
 |238|[Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_238.java)|O(n)|O(1)|Medium|Array|FB
+|*252|[Meeting Rooms](https://leetcode.com/problems/meeting-rooms/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_252.java)|O(nlogn)|O(1)|Easy|Arrays|FB
+
 
 Inspired by fishercoder1534's problem practising. Also borrowed few solutions from fishercoder1534. Thank you for the wonderful solutions
+
+Legend:
+* before problem number means the problem on leetcode is available onlyfor premium users. 
