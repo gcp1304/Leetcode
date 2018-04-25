@@ -28,6 +28,7 @@
 |211|[Add and Search Word - Data structure design](https://leetcode.com/problems/add-and-search-word-data-structure-design)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_211.java)|O(n) | O(h) | Medium| Trie | FB
 |215|[Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_215.java)|O(nlogn)|O(n)|Medium|PQ, Heap | FB
 |234|[Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_234.java)|O(n)|O(1)|Easy|Linked List|FB
-|235|[Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_235.java)|O(n)|O(h)|Easy|BST|FB
+|235|[Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_235.java)|O(h)|O(1)|Easy|BST, DFS|FB
+|236|[Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_236.java)|O(n)|O(h)|Medium|BST, DFS|FB
 
 Inspired by fishercoder1534's problem practising. Also borrowed few solutions from fishercoder1534. Thank you for the wonderful solutions
