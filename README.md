@@ -34,7 +34,7 @@
 |238|[Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_238.java)|O(n)|O(1)|Medium|Array|FB
 |*252|[Meeting Rooms](https://leetcode.com/problems/meeting-rooms/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_252.java)|O(nlogn)|O(1)|Easy|Arrays|FB
 |*253|[Meeting Rooms](https://leetcode.com/problems/meeting-rooms-ii/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_253.java)|O(nlogn)|O(h)|Medium|Heap, PQ|FB
-
+|257|[Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_257.java)|O(n*h)|O(h)|Easy|DFS, Recursion|FB
 
 Inspired by fishercoder1534's problem practising. Also borrowed few solutions from fishercoder1534. Thank you for the wonderful solutions
 
