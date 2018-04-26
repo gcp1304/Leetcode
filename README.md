@@ -12,6 +12,7 @@
 |20|[Valid Parentheses](https://leetcode.com/problems/valid-parentheses)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_20.java)|O(n)|O(n)|Easy|Stack|FB
 |23|[Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_23.java)|O(nlogk)|O(k)|Hard|Heap|FB
 |25|[Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_25.java)|O(n)|O(1)|Hard|Recursion, LinkedList|FB
+|26|[Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_26.java)|O(n)|O(1)|Easy|Arrays|FB
 |102|[Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/description/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_102.java)|O(n| O(h) | Medium |BFS | FB
 |121|[Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_121.java)|O(n)|O(1)|Easy| Array |FB
 |125|[Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_125.java)|O(n)|O(1)|Easy| Two Pointers|FB
