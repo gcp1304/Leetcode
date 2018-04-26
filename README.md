@@ -43,4 +43,4 @@
 Inspired by fishercoder1534's problem practising. Also borrowed few solutions from fishercoder1534. Thank you for the wonderful solutions
 
 Legend:
-* before problem number means the problem on leetcode is available onlyfor premium users. 
+'*'(asterisk) before problem number means the problem on leetcode is available onlyfor premium users. 
