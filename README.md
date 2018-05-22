@@ -39,6 +39,8 @@
 |257|[Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_257.java)|O(n*h)|O(h)|Easy|DFS, Recursion|FB
 |273|[Integer to English Words](https://leetcode.com/problems/integer-to-english-words)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_273.java)|O(n)|O(1) | Hard | String | FB
 |278|[First Bad Version](https://leetcode.com/problems/first-bad-version)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_278.java)|O(logn)|O(1)|Easy|Binary Search|FB
+|278|[Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_297.java)|O(n)|O(n)|Hard|BFS|FB, UBER
+
 
 Inspired by fishercoder1534's problem practising. Also borrowed few solutions from fishercoder1534. Thank you for the wonderful solutions
 
