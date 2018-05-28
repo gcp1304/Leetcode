@@ -14,6 +14,7 @@
 |11|[Container With Most Water](https://leetcode.com/problems/container-with-most-water/description/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_11.java)| O(n)| O(1) |Medium| Arrays | BLOOMBERG
 |12|[Integer To Roman](https://leetcode.com/problems/integer-to-roman/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_12.java)| O(1)| O(1) |Medium| Math, String | -
 |13|[Roman To Integer](https://leetcode.com/problems/roman-to-integer)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_13.java)|O(1)|O(1)|Easy|Math,String|FB
+|14|[Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/description/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_14.java)|O(S) (S is the sum of all characters in all strings)|O(1)|Easy|String| -
 |17|[Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_17.java)|O(n*4^n)|O(n)|Medium|Backtracking|FB
 |20|[Valid Parentheses](https://leetcode.com/problems/valid-parentheses)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_20.java)|O(n)|O(n)|Easy|Stack|FB
 |23|[Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_23.java)|O(nlogk)|O(k)|Hard|Heap|FB
