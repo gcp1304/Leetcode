@@ -12,6 +12,7 @@
 |9|[Palindrome Number](https://leetcode.com/problems/palindrome-number/description/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_9.java)| O(1) | O(1) | Easy | - | -
 |10|[Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/description/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_10.java)| O(m*n)| O(m*n) |Hard| DP | FB
 |11|[Container With Most Water](https://leetcode.com/problems/container-with-most-water/description/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_11.java)| O(n)| O(1) |Medium| Arrays | BLOOMBERG
+|12|[Integer To Roman](https://leetcode.com/problems/integer-to-roman/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_12.java)| O(1)| O(1) |Medium| Math, String | -
 |13|[Roman To Integer](https://leetcode.com/problems/roman-to-integer)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_13.java)|O(1)|O(1)|Easy|Math,String|FB
 |17|[Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_17.java)|O(n*4^n)|O(n)|Medium|Backtracking|FB
 |20|[Valid Parentheses](https://leetcode.com/problems/valid-parentheses)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_20.java)|O(n)|O(n)|Easy|Stack|FB
