@@ -39,7 +39,10 @@
 |257|[Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_257.java)|O(n*h)|O(h)|Easy|DFS, Recursion|FB
 |273|[Integer to English Words](https://leetcode.com/problems/integer-to-english-words)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_273.java)|O(n)|O(1) | Hard | String | FB
 |278|[First Bad Version](https://leetcode.com/problems/first-bad-version)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_278.java)|O(logn)|O(1)|Easy|Binary Search|FB
-|283|[Move Zeroes](https://leetcode.com/problems/move-zeroes)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_283.java)|O(n)|O(1)|Easy|Arrays|FB
+|*285|[Inorder Successor In BST](https://leetcode.com/problems/inorder-successor-in-bst/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_285.java)|O(h)|O(1)|Medium|BST|FB
+|###|[Minimum number of tokens to distribute]()|[Solution](./problems/src/main/java/com/chandra/problems/Problem_New.java)|O(n)|O(1)|Medium|Arrays|PayJoy
+|297|[Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_297.java)|O(n)|O(n)|Hard|BFS|FB, UBER
+
 
 Inspired by fishercoder1534's problem practising. Also borrowed few solutions from fishercoder1534. Thank you for the wonderful solutions
 
