@@ -27,7 +27,7 @@ public class Problem_7 {
     public static class Solution_1 {
         public int reverse(int x) {
             int res = 0;
-            if (Math.abs(res) > 214748364) return 0;
+            if (Math.abs(res) > Integer.MAX_VALUE/10) return 0;
             while (x != 0) {
                 res = res * 10 + x % 10;
                 x /= 10;
