@@ -8,7 +8,8 @@
 |3|[Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_3.java)| O(n) | O(n) |Medium| Sliding Window, Map, Set
 |6|[ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion/description/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_6.java)| O(n) | O(n) | Medium | Strings | -
 |7|[Reverse Integer](https://leetcode.com/problems/reverse-integer/description/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_7.java)| O(1) | O(1) | Easy | - | BLOOMBERG, AAPL
-|8|[String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/description/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_8.java)| O(1) | O(1) | Easy | - | BLOOMBERG, AAPL 
+|8|[String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/description/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_8.java)| O(1) | O(1) | Easy | - | BLOOMBERG, AAPL
+|9|[Palindrome Number](https://leetcode.com/problems/palindrome-number/description/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_9.java)| O(1) | O(1) | Easy | - | -
 |10|[Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/description/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_10.java)| O(m*n)| O(m*n) |Hard| DP | FB
 |13|[Roman To Integer](https://leetcode.com/problems/roman-to-integer)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_13.java)|O(1)|O(1)|Easy|Math,String|FB
 |17|[Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_17.java)|O(n*4^n)|O(n)|Medium|Backtracking|FB
