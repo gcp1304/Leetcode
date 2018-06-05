@@ -51,6 +51,7 @@
 |###|[Minimum number of tokens to distribute]()|[Solution](./problems/src/main/java/com/chandra/problems/Problem_New.java)|O(n)|O(1)|Medium|Arrays|PayJoy
 |297|[Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_297.java)|O(n)|O(n)|Hard|BFS|FB, UBER
 |301|[Remove Invalid Parentheses](https://leetcode.com/problems/remove-invalid-parentheses/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_301.java)|O(nk), k: # of recursion calls for DFS, O(n) for BFS| - |Hard|BFS, DFS|FB
+|314|[Binary Tree Vertical Order Traversal](https://leetcode.com/problems/binary-tree-vertical-order-traversal/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_314.java)|O(h)| O(n) |Medium|BFS|FB
 
 
 Inspired by fishercoder1534's problem practising. Also borrowed few solutions from fishercoder1534. Thank you for the wonderful solutions

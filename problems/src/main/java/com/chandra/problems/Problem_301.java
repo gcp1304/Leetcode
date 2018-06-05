@@ -25,7 +25,7 @@ public class Problem_301 {
     public static class Solution_1 {
         /*DFS
         // To make the prefix valid, we need to remove a ‘)’. The problem is: which one? The answer is any one in the prefix.
-        // However, if we remove any one, we will generate duplicates, e.x. s = ()). Thus, we noly remove 1st ) in a series of concecutive )s.
+        // However, if we remove any one, we will generate duplicates, e.x. s = ()). Thus, we only remove 1st ) in a series of consecutive )s.
         // After the removal, the prefix is then valid. We then call the function recursively to solve the rest of the string.
         // However, we need to keep another information: the last removal position. If we do not have this position, we will generate duplicates.
         // For this, we keep tracking the last removal position and only remove ‘)’ after that.
