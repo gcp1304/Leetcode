@@ -54,6 +54,7 @@
 |*301|[Remove Invalid Parentheses](https://leetcode.com/problems/remove-invalid-parentheses/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_301.java)|O(nk), k: # of recursion calls for DFS, O(n) for BFS| - |Hard|BFS, DFS|FB
 |*314|[Binary Tree Vertical Order Traversal](https://leetcode.com/problems/binary-tree-vertical-order-traversal/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_314.java)|O(h)| O(n) |Medium|BFS|FB
 |*325|[Maximum Size Subarray Sum Equals k](https://leetcode.com/problems/maximum-size-subarray-sum-equals-k/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_324.java)|O(n)| O(n) |Medium|HashTable|FB
+|334|[Increasing Triplet Subsequence](https://leetcode.com/problems/increasing-triplet-subsequence/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_334.java)|O(n)| O(1) |Medium|-|FB
 
 Inspired by fishercoder1534's problem practising. Also borrowed few solutions from fishercoder1534. Thank you for the wonderful solutions
 
