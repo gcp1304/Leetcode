@@ -56,6 +56,8 @@
 |*325|[Maximum Size Subarray Sum Equals k](https://leetcode.com/problems/maximum-size-subarray-sum-equals-k/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_324.java)|O(n)| O(n) |Medium|HashTable|FB
 |334|[Increasing Triplet Subsequence](https://leetcode.com/problems/increasing-triplet-subsequence/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_334.java)|O(n)| O(1) |Medium|-|FB
 |341|[Flatten Nested List Iterator](https://leetcode.com/problems/flatten-nested-list-iterator/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_341.java)|O(n)| O(n) |Medium|Stack|FB
+|380|[Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_380.java)|O(1)| O(1) |Medium|Design, HashMap|UBER
+
 
 Inspired by fishercoder1534's problem practising. Also borrowed few solutions from fishercoder1534. Thank you for the wonderful solutions
 
