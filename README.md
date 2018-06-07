@@ -49,7 +49,6 @@
 |278|[First Bad Version](https://leetcode.com/problems/first-bad-version)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_278.java)|O(logn)|O(1)|Easy|Binary Search|FB
 |*285|[Inorder Successor In BST](https://leetcode.com/problems/inorder-successor-in-bst/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_285.java)|O(h)|O(1)|Medium|BST|FB
 |*286|[Wall and Gates](https://leetcode.com/problems/walls-and-gates/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_286.java)|O(m*n)|O(g)|Medium|BFS, DFS|FB
-|###|[Minimum number of tokens to distribute]()|[Solution](./problems/src/main/java/com/chandra/problems/Problem_New.java)|O(n)|O(1)|Medium|Arrays|PayJoy
 |*297|[Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_297.java)|O(n)|O(n)|Hard|BFS|FB, UBER
 |*301|[Remove Invalid Parentheses](https://leetcode.com/problems/remove-invalid-parentheses/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_301.java)|O(nk), k: # of recursion calls for DFS, O(n) for BFS| - |Hard|BFS, DFS|FB
 |*314|[Binary Tree Vertical Order Traversal](https://leetcode.com/problems/binary-tree-vertical-order-traversal/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_314.java)|O(h)| O(n) |Medium|BFS|FB
@@ -57,7 +56,8 @@
 |334|[Increasing Triplet Subsequence](https://leetcode.com/problems/increasing-triplet-subsequence/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_334.java)|O(n)| O(1) |Medium|-|FB
 |341|[Flatten Nested List Iterator](https://leetcode.com/problems/flatten-nested-list-iterator/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_341.java)|O(n)| O(n) |Medium|Stack|FB
 |380|[Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_380.java)|O(1)| O(1) |Medium|Design, HashMap|UBER
-
+|###|[Minimum number of tokens to distribute]()|[Solution](./problems/src/main/java/com/chandra/problems/Problem_New.java)|O(n)|O(1)|Medium|Arrays|PayJoy
+|###|[Serialize and Deserialize General Tree]()|[Solution](./problems/src/main/java/com/chandra/problems/SerializeAndDeserializeNArrayTree.java)|?|?|Medium|Trees|Uber
 
 Inspired by fishercoder1534's problem practising. Also borrowed few solutions from fishercoder1534. Thank you for the wonderful solutions
 
