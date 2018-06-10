@@ -61,7 +61,9 @@
 |398|[Random Pick Index](https://leetcode.com/problems/random-pick-index/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_398.java)||  |Medium|HashMap|FB
 |404|[Sum of Left Leaves](https://leetcode.com/problems/sum-of-left-leaves/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_404.java)|O(n)| O(1) |Easy|Recursive|FB
 |410|[Split Array Largest Sum](https://leetcode.com/problems/split-array-largest-sum/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_410.java)|O(nlogn)| O(1) |Hard|Binary Search|FB
-|461|[Hamming Distance](https://leetcode.com/problems/hamming-distance/description//)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_461.java)|O(n)| O(1) |Easy||FB
+|461|[Hamming Distance](https://leetcode.com/problems/hamming-distance/description//)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_461.java)|O(n)| O(1) |Easy|Bit Manipulation|FB
+|477|[Total Hamming Distance](https://leetcode.com/problems/total-hamming-distance/description/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_477.java)|O(n)| O(1) |Medium|Bit Manipulation|FB
+
 
 |###|[Minimum number of tokens to distribute]()|[Solution](./problems/src/main/java/com/chandra/problems/Problem_New.java)|O(n)|O(1)|Medium|Arrays|PayJoy
 |###|[Serialize and Deserialize General Tree]()|[Solution](./problems/src/main/java/com/chandra/problems/SerializeAndDeserializeNArrayTree.java)|?|?|Medium|Trees|Uber
