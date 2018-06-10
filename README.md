@@ -23,6 +23,7 @@
 |28|[Implement strStr()](https://leetcode.com/problems/implement-strstr)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_28.java)|O(n)|O(1)|Easy|String|FB
 |33|[Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_33.java)|O(logn)|O(1)|Medium|Binary Search|FB
 |44|[Wildcard Matching](https://leetcode.com/problems/wildcard-matching/description/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_44.java)|O(nm)|O(nm)|Hard|DP|FB
+|49|[Group Anagrams](https://leetcode.com/problems/group-anagrams/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_49.java)|O(m*klogk)|O(mk)|Medium|HashMap|FB
 |102|[Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/description/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_102.java)|O(n| O(h) | Medium |BFS | FB
 |121|[Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_121.java)|O(n)|O(1)|Easy| Array |FB
 |125|[Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_125.java)|O(n)|O(1)|Easy| Two Pointers|FB
