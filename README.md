@@ -70,6 +70,7 @@
 |461|[Hamming Distance](https://leetcode.com/problems/hamming-distance//)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_461.java)|O(n)| O(1) |Easy|Bit Manipulation|FB
 |477|[Total Hamming Distance](https://leetcode.com/problems/total-hamming-distance/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_477.java)|O(n)| O(1) |Medium|Bit Manipulation|FB
 |494|[Target Sum](https://leetcode.com/problems/target-sum/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_494.java)|O(2^n)| O(1) |Medium|Recursive|FB
+|523|[Continuous Subarray Sum](https://leetcode.com/problems/continuous-subarray-sum/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_523.java)|O(n)| O(1) |Medium|DP|FB
 
 
 |###|[Minimum number of tokens to distribute]()|[Solution](./problems/src/main/java/com/chandra/problems/Problem_New.java)|O(n)|O(1)|Medium|Arrays|PayJoy
