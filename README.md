@@ -28,9 +28,10 @@
 |102|[Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_102.java)|O(n| O(h) | Medium |BFS | FB
 |121|[Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_121.java)|O(n)|O(1)|Easy| Array |FB
 |125|[Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_125.java)|O(n)|O(1)|Easy| Two Pointers|FB
-|133|[Clone Graph](https://leetcode.com/problems/clone-graph/description/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_133.java)|O(n)|O(n)|Medium| DFS, BFS|FB
 |127|[Word Ladder](https://leetcode.com/problems/word-ladder/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_127.java)|O(n^2)|O(n)|Medium| BFS |FB
 |128|[Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_128.java)|O(n) or O(n*m)|O(n)|Hard|  |FB
+|133|[Clone Graph](https://leetcode.com/problems/clone-graph/description/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_133.java)|O(n)|O(n)|Medium| DFS, BFS|FB
+|138|[Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/description/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_138.java)|O(n)|O(n)|Medium| HashMap |FB
 |139|[Word Break](https://leetcode.com/problems/word-break/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_139.java)|O(n^3) or O(n^2)|O(n)|Medium| DP, BFS |FB
 |146|[LRU Cache](https://leetcode.com/problems/lru-cache/) | [Solution](./problems/src/main/java/com/chandra/problems/Problem_146.java)|amortized O(1) | O(k) | Hard| Doubly Linked List, HashMap| FB
 |151|[Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/) | [Solution](./problems/src/main/java/com/chandra/problems/Problem_151.java)|O(n) | O(n) | Medium| |
