@@ -32,7 +32,8 @@
 |139|[Word Break](https://leetcode.com/problems/word-break/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_139.java)|O(n^3) or O(n^2)|O(n)|Medium| DP, BFS |FB
 |146|[LRU Cache](https://leetcode.com/problems/lru-cache/) | [Solution](./problems/src/main/java/com/chandra/problems/Problem_146.java)|amortized O(1) | O(k) | Hard| Doubly Linked List, HashMap| FB
 |*161|[One Edit Distance](https://leetcode.com/problems/one-edit-distance/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_161.java)|O(n) | O(1) | Easy| | FB
-|167|[Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_167.java)|O(n) | O(1) | Easy| |
+|167|[Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_167.java)|O(n) | O(1) | Easy| |
+|*170|[Two Sum III - Data structure design](https://leetcode.com/problems/two-sum-iii-data-structure-design/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_170.java)|O(n) | O(n) | Easy| HashTable |
 |168|[Excel Sheet Column Title](https://leetcode.com/problems/excel-sheet-column-title)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_168.java)|O(n) | O(1) | Easy| | FB
 |173|[Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_173.java)|O(1) | O(h) | Medium| Stack | FB
 |200|[Number of Islands](https://leetcode.com/problems/number-of-islands)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_200.java)|O(m*n) | O(m*n) | Medium| DFS | FB
