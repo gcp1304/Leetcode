@@ -14,21 +14,21 @@ import java.util.Map;
  * return [0, 1].
  */
 
+/*
+Brute Force - O(n^2)
+ */
+
 public class Problem_1 {
+    // Hash Table - O(n)
     public static class Solution1 {
         public int[] twoSum(int[] nums, int target) {
             Map<Integer, Integer> map = new HashMap<>();
-            int[] result = new int[]{-1, -1};
             for (int i = 0; i < nums.length; i++) {
-                if (map.containsKey(target - nums[i])) {
-                    result[0] = map.get(target - nums[i]);
-                    result[1] = i;
-                    return result;
-                } else {
-                    map.put(nums[i], i);
-                }
+                if (map.containsKey(target - nums[i]))
+                    return new int[] {map.get(target - nums[i]) + 1, i+1};
+                map.put(nums[i], i);
             }
-            return result;
+            throw new IllegalArgumentException("No two sum solution");
         }
     }
 }
