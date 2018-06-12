@@ -36,10 +36,7 @@ public class Problem_215 {
 
             for (int num : nums) {
                 pq.offer(num);
-            }
-
-            if (pq.size() > k) {
-                pq.poll();
+                if (pq.size() > k) pq.poll();
             }
 
             return pq.peek();

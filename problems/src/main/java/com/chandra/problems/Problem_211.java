@@ -60,19 +60,19 @@ public class Problem_211 {
              * Returns if the word is in the data structure. A word could contain the dot character '.' to represent any one letter.
              */
             public boolean search(String word) {
-                return search(word.toCharArray(), 0, root);
+                return dfs(word.toCharArray(), 0, root);
             }
 
-            private boolean search(char[] chars, int k, TrieNode node) {
+            private boolean dfs(char[] chars, int k, TrieNode node) {
                 if (k == chars.length) return node.isWord;
 
 
                 if (chars[k] == '.') {
                     for (int i = 0; i < node.children.length; i++) {
-                        if (node.children[i] != null && search(chars, k + 1, node.children[i])) return true;
+                        if (node.children[i] != null && dfs(chars, k + 1, node.children[i])) return true;
                     }
                 } else {
-                    return node.children[chars[k] - 'a'] != null && search(chars, k + 1, node.children[chars[k] - 'a']);
+                    return node.children[chars[k] - 'a'] != null && dfs(chars, k + 1, node.children[chars[k] - 'a']);
                 }
                 return false;
             }
