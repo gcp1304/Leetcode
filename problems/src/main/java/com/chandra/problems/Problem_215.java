@@ -32,12 +32,16 @@ public class Problem_215 {
         // O(N lg K) running time + O(K) memory
         public int findKthLargest(int[] nums, int k) {
             // using min heap
-            Queue<Integer> pq = new PriorityQueue<>((o1, o2) -> o2 - o1);
+            Queue<Integer> pq = new PriorityQueue<>();
 
             for (int num : nums) {
                 pq.offer(num);
-                if (pq.size() > k) pq.poll();
+                if (pq.size() > k) {
+                    pq.poll();
+                }
             }
+
+
 
             return pq.peek();
         }
