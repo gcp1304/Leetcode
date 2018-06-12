@@ -1,5 +1,6 @@
 package com.chandra.problems;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -24,6 +25,28 @@ public class Problem_17 {
                 }
             }
             return ans;
+        }
+    }
+
+    public static class Solution_2 {
+        //DFS
+        public List<String> letterCombinations(String digits) {
+            String[] mapping = new String[] {"", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
+            List<String> res = new ArrayList<>();
+            if (digits.length() == 0) return res;
+            dfs(res, "", mapping, digits, 0);
+            return res;
+        }
+
+        private void dfs(List<String> res, String temp, String[] mapping, String digits, int start) {
+            if (start == digits.length()) {
+                res.add(temp);
+                return;
+            }
+
+            for (int i = 0; i < mapping[digits.charAt(start) - '0'].length(); i++) {
+                dfs(res, temp + mapping[digits.charAt(start) - '0'].charAt(i), mapping, digits, start+1);
+            }
         }
     }
 }

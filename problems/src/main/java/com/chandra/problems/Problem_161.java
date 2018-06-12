@@ -13,7 +13,7 @@ public class Problem_161 {
 
             int m = s.length(), n = t.length(), diffCount = 0, i = 0, j = 0;
 
-            if (Math.abs(m-n) > 1) return false;
+            if (Math.abs(m - n) > 1) return false;
 
             while (i < m && j < n) {
                 // When both the chars are same
@@ -25,8 +25,8 @@ public class Problem_161 {
                     if (diffCount > 1) return false; // since there more than one edit
 
                     // If length of one string is greater than other, then possible action is to remove a char
-                    if (m>n) i++;
-                    else if (n>m) j++;
+                    if (m > n) i++;
+                    else if (n > m) j++;
                     else { // if lengths of both strings is same
                         i++;
                         j++;
@@ -36,11 +36,26 @@ public class Problem_161 {
             }
 
             // if last char is extra in any string
-            if (i<m || j < n) {
+            if (i < m || j < n) {
                 diffCount++;
             }
 
             return diffCount == 1;
+        }
+    }
+
+    public static class Solution_2 {
+        public boolean isOneEditDistance(String s, String t) {
+            int len = Math.min(s.length(), t.length());
+            for (int i = 0; i < len; i++) {
+                if (s.charAt(i) != t.charAt(i)) {
+                    if (s.length() == t.length()) return s.substring(i+1).equals(t.substring(i+1)); //replace
+                    else if (s.length() < t.length()) return s.substring(i).equals(t.substring(i+1)); // delete in t
+                    else return s.substring(i+1).equals(t.substring(i)); //delete in s
+                }
+            }
+
+            return Math.abs(s.length() - t.length()) == 1; // corner case: ""
         }
     }
 }
