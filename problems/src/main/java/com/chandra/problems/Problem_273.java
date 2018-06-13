@@ -25,7 +25,7 @@ public class Problem_273 {
             final int BILLION = 1000000000;
             final int MILLION = 1000000;
             final int THOUSAND = 1000;
-            final int HUNDERED = 100;
+            final int HUNDRED = 100;
 
             if (num == 0) return LESS_THAN_20[num];
 
@@ -46,9 +46,9 @@ public class Problem_273 {
                 num %= THOUSAND;
             }
 
-            if (num >= HUNDERED) {
-                words.append(numberToWords(num / HUNDERED)).append(" Hundred ");
-                num %= HUNDERED;
+            if (num >= HUNDRED) {
+                words.append(numberToWords(num / HUNDRED)).append(" Hundred ");
+                num %= HUNDRED;
             }
 
             if (num >= 20) {
@@ -63,5 +63,39 @@ public class Problem_273 {
             return words.toString().trim().replace("  ", " ");
 
         }
+    }
+
+    public static class Solution_2 {
+        private final String[] LESS_THAN_20 = {"", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen", "Seventeen", "Eighteen", "Nineteen"};
+        private final String[] TENS = {"", "Ten", "Twenty", "Thirty", "Forty", "Fifty", "Sixty", "Seventy", "Eighty", "Ninety"};
+        private final String[] THOUSANDS = {"", "Thousand", "Million", "Billion"};
+
+        public String numberToWords(int num) {
+            if (num == 0) return "Zero";
+
+            int i = 0;
+            StringBuilder words = new StringBuilder();
+
+            while (num > 0) {
+                if (num % 1000 != 0)
+                    words.insert(0, helper(num % 1000) + THOUSANDS[i] + " ");
+
+                num /= 1000;
+                i++;
+            }
+            return words.toString().trim();
+        }
+
+        private String helper(int num) {
+            if (num == 0) return " ";
+            if (num < 20) return LESS_THAN_20[num] + " ";
+            if (num < 100) return TENS[num/10] + " " + helper(num % 10);
+            return LESS_THAN_20[num/100] + " Hundred " + helper(num % 100);
+        }
+    }
+
+    public static void main(String[] args) {
+        Problem_273.Solution_2 solution_2 = new Solution_2();
+        System.out.println(solution_2.numberToWords(1234567890));
     }
 }

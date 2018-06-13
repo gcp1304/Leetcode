@@ -30,6 +30,7 @@ public class Problem_235 {
         This walks straight from the root to the LCA, not looking at the rest of the tree,
         so it's pretty much as fast as it gets.
          */
+        // Iterative
         public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
             while ((root.val - p.val) * (root.val - q.val) > 0) // < 0 means each node lie on separate subtree
                 root = p.val < root.val ? root.left : root.right;
@@ -37,7 +38,16 @@ public class Problem_235 {
         }
     }
 
-    public static class Solution2 {
+    // Recursive of Solution_1
+    public static class Solution_2 {
+        public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+            if ((root.val - p.val) * (root.val - q.val) <= 0) return root;
+            if (p.val < root.val) return lowestCommonAncestor(root.left, p, q);
+            return lowestCommonAncestor(root.right, p, q);
+        }
+    }
+
+    public static class Solution3 {
         /*
         If both the given node values are smaller than root node value, then check on left tree
         If both the given node values are greater than root node value, then check on right tree

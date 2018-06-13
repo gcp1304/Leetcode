@@ -8,11 +8,11 @@ import static org.junit.Assert.*;
 
 public class Problem_253Test {
 
-    Problem_253.Solution1 solution1;
+    Problem_253.Solution_1 solution1;
     Interval[] input = new Interval[3];
     @Before
     public void setUp() throws Exception {
-        solution1 = new Problem_253.Solution1();
+        solution1 = new Problem_253.Solution_1();
         input[0] = new Interval(0, 30);
         input[1] = new Interval(5, 10);
         input[2] = new Interval(15, 20);

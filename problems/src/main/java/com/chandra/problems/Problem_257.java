@@ -35,19 +35,15 @@ public class Problem_257 {
         }
 
         private void dfs(TreeNode node, List<String> paths, String path) {
+            if (node == null) return;
+
             if (node.left == null && node.right == null) {
                 paths.add(path + node.val);
                 return;
             }
 
-            path += node.val + "->";
-            if (node.left != null) {
-                dfs(node.left, paths, path);
-            }
-
-            if (node.right != null) {
-                dfs(node.right, paths, path);
-            }
+            dfs(node.left, paths, path + node.val + "->");
+            dfs(node.right, paths, path + node.val + "->");
         }
     }
 

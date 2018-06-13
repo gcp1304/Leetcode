@@ -16,7 +16,8 @@ import java.util.PriorityQueue;
  * return 2.
  */
 public class Problem_253 {
-    public static class Solution1 {
+    public static class Solution_1 {
+        // Using PQ
         public int minMeetingRooms(Interval[] intervals) {
             if (intervals == null || intervals.length == 0) return 0;
 
@@ -40,6 +41,31 @@ public class Problem_253 {
                 pq.offer(intervals[i].end);
             }
             return pq.size();
+        }
+    }
+
+
+    public static class Solution_2 {
+        // Greedy Solution
+        public int minMeetingRooms(Interval[] intervals) {
+            int[] start = new int[intervals.length];
+            int[] end = new int[intervals.length];
+
+            for (int i = 0; i < intervals.length; i++) {
+                start[i] = intervals[i].start;
+                end[i] = intervals[i].end;
+            }
+
+            Arrays.sort(start);
+            Arrays.sort(end);
+
+            int endIdx = 0, res = 0;
+
+            for (int i = 0; i < start.length; i++) {
+                if (start[i] < end[endIdx]) res++;
+                else endIdx++;
+            }
+            return res;
         }
     }
 }

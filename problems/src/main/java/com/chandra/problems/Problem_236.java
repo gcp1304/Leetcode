@@ -23,7 +23,7 @@ import com.chandra.common.TreeNode;
  */
 
 public class Problem_236 {
-    public static class Solution1 {
+    public static class Solution_1 {
         public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
             if (root == null) return null;
 
@@ -34,7 +34,22 @@ public class Problem_236 {
 
             if (leftLCA != null && rightLCA != null) return root;
 
+            if (leftLCA == null && rightLCA == null) return null;
+
             return (leftLCA != null) ? leftLCA : rightLCA;
+        }
+    }
+
+
+    public static class Solution_2 {
+        // Concise version of Solution_1
+        public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+            if (root == null || root == p || root == q) return root;
+            TreeNode leftLCA = lowestCommonAncestor(root.left, p, q);
+            TreeNode rightLCA = lowestCommonAncestor(root.right, p, q);
+
+            return leftLCA == null ? rightLCA : rightLCA == null ? leftLCA : root;
+
         }
     }
 }
