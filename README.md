@@ -61,6 +61,7 @@
 |278|[First Bad Version](https://leetcode.com/problems/first-bad-version)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_278.java)|O(logn)|O(1)|Easy|Binary Search|FB
 |*285|[Inorder Successor In BST](https://leetcode.com/problems/inorder-successor-in-bst/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_285.java)|O(h)|O(1)|Medium|BST|FB
 |*286|[Wall and Gates](https://leetcode.com/problems/walls-and-gates/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_286.java)|O(m*n)|O(g)|Medium|BFS, DFS|FB
+|295|[Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_295.java)|O(logn)|O(n)|Hard|PQ|FB
 |*297|[Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_297.java)|O(n)|O(n)|Hard|BFS|FB, UBER
 |*301|[Remove Invalid Parentheses](https://leetcode.com/problems/remove-invalid-parentheses/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_301.java)|O(nk), k: # of recursion calls for DFS, O(n) for BFS| - |Hard|BFS, DFS|FB
 |*314|[Binary Tree Vertical Order Traversal](https://leetcode.com/problems/binary-tree-vertical-order-traversal/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_314.java)|O(h)| O(n) |Medium|BFS|FB
