@@ -85,4 +85,53 @@ public class Problem_285 {
             return curr;
         }
     }
+
+    public static class Solution_3 {
+        public TreeNode inorderSuccessor(TreeNode root, TreeNode p) {
+            if (root == null) return root;
+
+            TreeNode successor = null;
+            while (root != null) {
+                if (p.val < root.val) {
+                    successor = root;
+                    root = root.left;
+                } else {
+                    root = root.right;
+                }
+            }
+
+            return successor;
+        }
+    }
+
+
+    public static class Solution_4 {
+        //recursive of Solution_3
+        public TreeNode inorderSuccessor(TreeNode root, TreeNode p) {
+            if (root == null) return root;
+
+            if (p.val < root.val) {
+                TreeNode successor = inorderSuccessor(root.left, p);
+                return successor == null ? successor : root;
+            } else return inorderSuccessor(root.right, p);
+        }
+    }
+
+    public static void main(String[] args) {
+        TreeNode node = new TreeNode(20);
+        node.left = new TreeNode(5);
+        node.right = new TreeNode(40);
+        node.left.left = new TreeNode(4);
+        node.left.right = new TreeNode(10);
+        node.left.right.left = new TreeNode(6);
+        node.left.right.right = new TreeNode(15);
+
+        Solution_3 solution_3 = new Solution_3();
+        TreeNode succ = solution_3.inorderSuccessor(node, new TreeNode(15));
+        System.out.println(succ.val);
+
+        Solution_4 solution_4 = new Solution_4();
+        TreeNode succ1 = solution_4.inorderSuccessor(node, new TreeNode(22));
+        System.out.println(succ1.val);
+    }
 }
