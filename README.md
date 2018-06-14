@@ -23,6 +23,7 @@
 |28|[Implement strStr()](https://leetcode.com/problems/implement-strstr)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_28.java)|O(n)|O(1)|Easy|String|FB
 |29|[Divide Two Integers](https://leetcode.com/problems/divide-two-integers/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_29.java)|?|?|Medium||FB
 |33|[Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_33.java)|O(logn)|O(1)|Medium|Binary Search|FB
+|40|[Combination Sum II](https://leetcode.com/problems/combination-sum-ii/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_40.java)|O(k*n^k)|O(k)|Medium|Backtracking|FB
 |44|[Wildcard Matching](https://leetcode.com/problems/wildcard-matching/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_44.java)|O(nm)|O(nm)|Hard|DP|FB
 |49|[Group Anagrams](https://leetcode.com/problems/group-anagrams/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_49.java)|O(m*klogk)|O(mk)|Medium|HashMap|FB
 |50|[Pow(x, n)](https://leetcode.com/problems/powx-n/description/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_50.java)|O(logn)|O(logn)|Medium||FB

@@ -39,8 +39,10 @@ For this problem itself, still use the {-1, 1} example, if we can use any number
             int[] result = new int[target + 1];
             result[0] = 1;
             for (int i = 1; i <= target; i++) {
+                // Top-to-bottom approach
                 for (int num : nums) {
-                    if (num <= i) {
+                    // Current sum for target is calculated by adding all previous target sums
+                    if (num <= i) { // we find sum only for the numbers less than target.
                         result[i] += result[i - num];
                     }
                 }
