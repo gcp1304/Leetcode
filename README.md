@@ -63,6 +63,7 @@
 |*286|[Wall and Gates](https://leetcode.com/problems/walls-and-gates/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_286.java)|O(m*n)|O(g)|Medium|BFS, DFS|FB
 |295|[Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_295.java)|O(logn)|O(n)|Hard|PQ|FB
 |*297|[Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_297.java)|O(n)|O(n)|Hard|BFS|FB, UBER
+|300|[Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_300.java)|O(nlogn)|O(n)|Medium|DP|FB
 |*301|[Remove Invalid Parentheses](https://leetcode.com/problems/remove-invalid-parentheses/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_301.java)|O(nk), k: # of recursion calls for DFS, O(n) for BFS| - |Hard|BFS, DFS|FB
 |*314|[Binary Tree Vertical Order Traversal](https://leetcode.com/problems/binary-tree-vertical-order-traversal/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_314.java)|O(h)| O(n) |Medium|BFS|FB
 |*325|[Maximum Size Subarray Sum Equals k](https://leetcode.com/problems/maximum-size-subarray-sum-equals-k/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_324.java)|O(n)| O(n) |Medium|HashTable|FB
