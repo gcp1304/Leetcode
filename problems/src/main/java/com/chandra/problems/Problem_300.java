@@ -71,7 +71,7 @@ public class Problem_300 {
                 int i = Arrays.binarySearch(dp, 0, len, n);
                 if (i < 0)	i = - (i + 1);
                 dp[i] = n;
-                if (i == len) len ++ ;
+                if (i == len) len++;
             }
             return len;
         }
