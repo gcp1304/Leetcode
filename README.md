@@ -34,6 +34,7 @@
 |125|[Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_125.java)|O(n)|O(1)|Easy| Two Pointers|FB
 |127|[Word Ladder](https://leetcode.com/problems/word-ladder/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_127.java)|O(n^2)|O(n)|Medium| BFS |FB
 |128|[Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_128.java)|O(n) or O(n*m)|O(n)|Hard|  |FB
+|131|[Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_131.java)|O(n^2)|O(n^2)|Medium| Backtracking|
 |133|[Clone Graph](https://leetcode.com/problems/clone-graph/description/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_133.java)|O(n)|O(n)|Medium| DFS, BFS|FB
 |138|[Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/description/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_138.java)|O(n)|O(n)|Medium| HashMap |FB
 |139|[Word Break](https://leetcode.com/problems/word-break/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_139.java)|O(n^3) or O(n^2)|O(n)|Medium| DP, BFS |FB
