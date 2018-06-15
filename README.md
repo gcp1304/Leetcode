@@ -28,6 +28,7 @@
 |40|[Combination Sum II](https://leetcode.com/problems/combination-sum-ii/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_40.java)|O(k*n^k)|O(k)|Medium|Backtracking|FB
 |43|[Multiply Strings](https://leetcode.com/problems/multiply-strings/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_43.java)|O(n)|O(1)|Medium|Array|FB
 |44|[Wildcard Matching](https://leetcode.com/problems/wildcard-matching/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_44.java)|O(nm)|O(nm)|Hard|DP|FB
+|46|[Permutations](https://leetcode.com/problems/permutations/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_46.java)| O(n*n!) | O(n) |Medium | Backtracking|
 |49|[Group Anagrams](https://leetcode.com/problems/group-anagrams/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_49.java)|O(m*klogk)|O(mk)|Medium|HashMap|FB
 |50|[Pow(x, n)](https://leetcode.com/problems/powx-n/description/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_50.java)|O(logn)|O(logn)|Medium||FB
 |77|[Combinations](https://leetcode.com/problems/combinations/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_77.java)|O(n!) |O(n)||Medium|Backtracking||
