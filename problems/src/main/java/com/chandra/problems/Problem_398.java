@@ -61,7 +61,8 @@ public class Problem_398 {
 
             for (int i = 0; i < nums.length; i++) {
                 if (nums[i] == target) {
-                    // this if condition will count the number of occurances and selects a random number if that's not equal to zero then update result to store current index
+                    // this if condition will count the number of occurances and
+                    // selects a random number if that's not equal to zero then update result to store current index
                     if (rnd.nextInt(++count) == 0) result = i;
                 }
             }
