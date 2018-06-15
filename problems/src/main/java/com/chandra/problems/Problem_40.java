@@ -40,13 +40,11 @@ public class Problem_40 {
         public List<List<Integer>> combinationSum2(int[] candidates, int target) {
             List<List<Integer>> res = new ArrayList<>();
             Arrays.sort(candidates);
-            dfs(res, candidates, target, new ArrayList<Integer>(), 0);
+            backtracking(res, candidates, target, new ArrayList<Integer>(), 0);
             return res;
         }
 
-        private void dfs(List<List<Integer>> res, int[] candidates, int target, ArrayList<Integer> currentCandidates, int start) {
-            if (target < 0) return;
-
+        private void backtracking(List<List<Integer>> res, int[] candidates, int target, ArrayList<Integer> currentCandidates, int start) {
             if (target == 0) {
                 res.add(new ArrayList<>(currentCandidates));
                 return;
@@ -56,7 +54,7 @@ public class Problem_40 {
                 if (i > start && candidates[i] == candidates[i-1]) continue; // skip using duplicate numbers
 
                 currentCandidates.add(candidates[i]);
-                dfs(res, candidates, target - candidates[i], currentCandidates, i + 1);
+                backtracking(res, candidates, target - candidates[i], currentCandidates, i + 1);
                 currentCandidates.remove(currentCandidates.size() - 1);
             }
         }
