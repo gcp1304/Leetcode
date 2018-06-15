@@ -74,6 +74,7 @@
 |341|[Flatten Nested List Iterator](https://leetcode.com/problems/flatten-nested-list-iterator/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_341.java)|O(n)| O(n) |Medium|Stack|FB
 |377|[Combination Sum IV](https://leetcode.com/problems/combination-sum-iv/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_377.java)|O(n^2)| O(n) |Medium|DP|FB
 |380|[Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_380.java)|O(1)| O(1) |Medium|Design, HashMap|UBER, FB, GOOG, AMZN, TWTR
+|394|[Decode String](https://leetcode.com/problems/decode-string/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_394.java)|O(n)| O(1) |Medium||FB
 |398|[Random Pick Index](https://leetcode.com/problems/random-pick-index/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_398.java)||  |Medium|HashMap|FB
 |404|[Sum of Left Leaves](https://leetcode.com/problems/sum-of-left-leaves/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_404.java)|O(n)| O(1) |Easy|Recursive|FB
 |410|[Split Array Largest Sum](https://leetcode.com/problems/split-array-largest-sum/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_410.java)|O(nlogn)| O(1) |Hard|Binary Search|FB
