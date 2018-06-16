@@ -93,6 +93,7 @@
 |494|[Target Sum](https://leetcode.com/problems/target-sum/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_494.java)|O(2^n)| O(1) |Medium|Recursive|FB
 |523|[Continuous Subarray Sum](https://leetcode.com/problems/continuous-subarray-sum/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_523.java)|O(n)| O(1) |Medium|DP|FB
 |525|[Continuous Array](https://leetcode.com/problems/contiguous-array/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_525.java)|O(n)| O(n) |Medium|HashMap|FB
+|535|[Encode and Decode TinyURL](https://leetcode.com/problems/encode-and-decode-tinyurl/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_535.java) | O(1) |O(n) |Medium | Design | FB  
 |695|[Max Area of Island](https://leetcode.com/problems/max-area-of-island/description/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_695.java)|O(m*n)| O(1) |Easy|DFS|FB
 |###|[Minimum number of tokens to distribute]()|[Solution](./problems/src/main/java/com/chandra/problems/Problem_New.java)|O(n)|O(1)|Medium|Arrays|PayJoy
 |###|[Serialize and Deserialize General Tree]()|[Solution](./problems/src/main/java/com/chandra/problems/SerializeAndDeserializeNArrayTree.java)|?|?|Medium|Trees|Uber

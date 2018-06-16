@@ -18,18 +18,36 @@ import java.util.Map;
  Note: The length of the given binary array will not exceed 50,000.
  */
 public class Problem_525 {
+
     public static class Solution_1 {
+        // Brute Force - O(n^2)
+        public int findMaxLength(int[] nums) {
+            int zeros = 0, ones = 0, max = 0;
+            int start = 0, end = 0;
+            for (end = start; end < nums.length; end++) {
+                if (nums[end] == 0) zeros++;
+                else ones++;
+
+                if (zeros == ones) {
+                    max = Math.max(max, end - start + 1);
+                }
+
+            }
+
+            return max;
+        }
+    }
+
+    public static class Solution_2 {
+        // Time: O(n), Space: O(n)
         public int findMaxLength(int[] nums) {
             if (nums == null || nums.length == 0) return 0;
-
             HashMap<Integer, Integer> map = new HashMap<>();
-            map.put(0, -1); // initialize the map, which means at index zero, the length of contiguous subarray is -1
-            // for E.g [0, 1], o/p = 2 if we don't inialize index zero with -1 length, then o/p is zero.
-            int max = 0;
-            int sum = 0;
+            int max = 0, sum = 0;
             for (int i = 0; i < nums.length; i++) {
                 sum += nums[i] == 0 ? -1 : 1;
-                if (map.containsKey(sum)) {
+                if (sum == 0) max = i+1;
+                else if (map.containsKey(sum)) {
                     max = Math.max(max, i - map.get(sum));
                 } else {
                     map.put(sum, i);
