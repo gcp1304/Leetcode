@@ -29,7 +29,7 @@ public class Problem_131 {
             return res;
         }
 
-        private void backtracking(@NotNull String s, int start, ArrayList<String> currentPalindrome, List<List<String>> res) {
+        private void backtracking(String s, int start, ArrayList<String> currentPalindrome, List<List<String>> res) {
             if (start == s.length()) {
                 res.add(new ArrayList<>(currentPalindrome));
                 return;
