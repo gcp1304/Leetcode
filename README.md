@@ -32,6 +32,7 @@
 |47|[Permutations II](https://leetcode.com/problems/permutations-ii/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_47.java)|O(n*n!)|O(n)||Medium|Backtracking
 |49|[Group Anagrams](https://leetcode.com/problems/group-anagrams/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_49.java)|O(m*klogk)|O(mk)|Medium|HashMap|FB
 |50|[Pow(x, n)](https://leetcode.com/problems/powx-n/description/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_50.java)|O(logn)|O(logn)|Medium||FB
+|56|[Merge Intervals](https://leetcode.com/problems/merge-intervals/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_56.java)|O(n*logn)|O(1)|Medium| Array, Sort|FB
 |77|[Combinations](https://leetcode.com/problems/combinations/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_77.java)|O(n!) |O(n)||Medium|Backtracking||
 |78|[Subsets](https://leetcode.com/problems/subsets/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_78.java)|O(n^2) |O(1)|Medium|Backtracking|
 |90|[Subsets II](https://leetcode.com/problems/subsets-ii/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_90.java)|O(n^2) |O(1)|Medium|Backtracking|
