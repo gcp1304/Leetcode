@@ -100,6 +100,9 @@
 |554|[Brick Wall](https://leetcode.com/problems/brick-wall/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_554.java) | O(n) (n is total number of bricks in the wall) |O(m) (m is width of the wall) |Medium | HashMap | FB
 |572|[Subtree of Another Tree](https://leetcode.com/problems/subtree-of-another-tree/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_572.java) | O(m*n) |O(1) |Easy | Tree | FB  
 |695|[Max Area of Island](https://leetcode.com/problems/max-area-of-island/description/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_695.java)|O(m*n)| O(1) |Easy|DFS|FB
+|852|[Peak Index in a Mountain Array](https://leetcode.com/problems/peak-index-in-a-mountain-array/description/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_852.java)|O(logN)| O(1) |Easy|Binary Search|
+|853|[Car Fleet](https://leetcode.com/problems/car-fleet/description/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_853.java)|O(NlogN), where N is the number of cars| O(N) |Medium||
+|855|[Exam Room](https://leetcode.com/problems/exam-room/description/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_855.java)|| |Medium||
 |###|[Minimum number of tokens to distribute]()|[Solution](./problems/src/main/java/com/chandra/problems/Problem_New.java)|O(n)|O(1)|Medium|Arrays|PayJoy
 |###|[Serialize and Deserialize General Tree]()|[Solution](./problems/src/main/java/com/chandra/problems/SerializeAndDeserializeNArrayTree.java)|?|?|Medium|Trees|Uber
 
