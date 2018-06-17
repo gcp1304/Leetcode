@@ -37,6 +37,7 @@ public class Problem_852 {
 
     public static class Solution_2 {
         // Binary Search
+        // Time : O(logN), Space: O(1)
         public int peakIndexInMountainArray(int[] A) {
             int start = 0, end = A.length;
             while(start < end) {
@@ -47,6 +48,17 @@ public class Problem_852 {
                 else end = mid;
             }
             return -1;
+        }
+
+        //problem statement says that atleast one peak is guaranteed we can simplify the above code
+        public int peakIndexMountainArrayII(int[] A) {
+            int start = 0, end = A.length-1;
+            while (start < end) {
+                int mid = (end - start)/2 + start;
+                if (A[mid] < A[mid+1]) start = mid+1; // peak index is after mid.
+                else end = mid; // peak index <= mid.
+            }
+            return start; // found peak index.
         }
     }
 
