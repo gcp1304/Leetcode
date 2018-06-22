@@ -60,13 +60,24 @@ public class Problem_257 {
                 return paths;
             }
 
-            for (String path : binaryTreePaths(root.left)) {
+
+            // left tree paths
+            paths.add(root.val + "->");
+            paths.addAll(binaryTreePaths(root.left));
+
+            paths.add(root.val + "->");
+            paths.addAll(binaryTreePaths(root.right));
+
+
+            /*for (String path : binaryTreePaths(root.left)) {
                 paths.add(root.val + "->" + path);
             }
 
+
+
             for (String path : binaryTreePaths(root.right)) {
                 paths.add(root.val + "->" + path);
-            }
+            }*/
 
             return paths;
         }

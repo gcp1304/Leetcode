@@ -41,4 +41,9 @@ public class Problem_461 {
             return Integer.bitCount(x ^= y);
         }
     }
+
+    public static void main(String[] args) {
+        Problem_461.Solution_1 solution_1 = new Solution_1();
+        System.out.println(solution_1.hammingDistance(1, 4));
+    }
 }
