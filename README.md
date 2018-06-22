@@ -112,6 +112,7 @@
 |###|[Minimum number of tokens to distribute]()|[Solution](./problems/src/main/java/com/chandra/problems/Problem_New.java)|O(n)|O(1)|Medium|Arrays|PayJoy
 |###|[Serialize and Deserialize General Tree]()|[Solution](./problems/src/main/java/com/chandra/problems/SerializeAndDeserializeNArrayTree.java)|?|?|Medium|Trees|Uber
 |###|[Deletion Distance]()|[Solution](./problems/src/main/java/com/chandra/problems/DeletionDistance.java)|O(N.M)|O(N.M)|Medium|DP|
+|###|[One Edit Distance]()|[Solution](./problems/src/main/java/com/chandra/problems/OneEditDistance.java)|O(N.M)|O(N.M)|Medium|| FB
 
 Inspired by fishercoder1534's problem practising. Also borrowed few solutions from fishercoder1534. Thank you for the wonderful solutions
 
