@@ -26,7 +26,7 @@
 |38|[Count and Say](https://leetcode.com/problems/count-and-say/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_38.java)|O(n*2^n)|O(n)|Easy||FB
 |39|[Combination Sum](https://leetcode.com/problems/combination-sum/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_39.java)|O(k*n^k)|O(k)|Medium|Backtracking|
 |40|[Combination Sum II](https://leetcode.com/problems/combination-sum-ii/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_40.java)|O(k*n^k)|O(k)|Medium|Backtracking|FB
-|42|[Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/description/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_42.java)|O(n)|O(n)|Hard|DP|FB
+|42|[**Trapping Rain Water**](https://leetcode.com/problems/trapping-rain-water/description/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_42.java)|O(n)|O(n)|Hard|DP|FB
 |43|[Multiply Strings](https://leetcode.com/problems/multiply-strings/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_43.java)|O(n)|O(1)|Medium|Array|FB
 |44|[Wildcard Matching](https://leetcode.com/problems/wildcard-matching/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_44.java)|O(nm)|O(nm)|Hard|DP|FB
 |46|[Permutations](https://leetcode.com/problems/permutations/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_46.java)| O(n*n!) | O(n) |Medium | Backtracking|
@@ -105,7 +105,7 @@
 |637|[Average of Levels in Binary Tree](https://leetcode.com/problems/average-of-levels-in-binary-tree/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_637.java) | O(n) |O(1) |Easy| | FB
 |639|[Decode Ways II](https://leetcode.com/problems/decode-ways-ii/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_639.java) | O(n) |O(n) |Hard| DP | FB
 |647|[Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_647.java) | O(n^2) |O(1) |Medium | DP | FB
-|670|[Maximum Swap](https://leetcode.com/problems/maximum-swap/description/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_647.java)]    | O(n^2) - n is number of digits in a given number | O(n) | Medium ||FB
+|670|[**Maximum Swap**](https://leetcode.com/problems/maximum-swap/description/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_647.java)]    | O(n^2) - n is number of digits in a given number | O(n) | Medium ||FB
 |695|[Max Area of Island](https://leetcode.com/problems/max-area-of-island/description/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_695.java)|O(m*n)| O(1) |Easy|DFS|FB
 |852|[Peak Index in a Mountain Array](https://leetcode.com/problems/peak-index-in-a-mountain-array/description/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_852.java)|O(logN)| O(1) |Easy|Binary Search|
 |853|[Car Fleet](https://leetcode.com/problems/car-fleet/description/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_853.java)|O(NlogN), where N is the number of cars| O(N) |Medium||
@@ -113,7 +113,7 @@
 |###|[Minimum number of tokens to distribute]()|[Solution](./problems/src/main/java/com/chandra/problems/Problem_New.java)|O(n)|O(1)|Medium|Arrays|PayJoy
 |###|[Serialize and Deserialize General Tree]()|[Solution](./problems/src/main/java/com/chandra/problems/SerializeAndDeserializeNArrayTree.java)|?|?|Medium|Trees|Uber
 |###|[Deletion Distance]()|[Solution](./problems/src/main/java/com/chandra/problems/DeletionDistance.java)|O(N.M)|O(N.M)|Medium|DP|
-|###|[One Edit Distance]()|[Solution](./problems/src/main/java/com/chandra/problems/OneEditDistance.java)|O(N.M)|O(N.M)|Medium|| FB
+|###|[**One Edit Distance**]()|[Solution](./problems/src/main/java/com/chandra/problems/OneEditDistance.java)|O(N.M)|O(N.M)|Medium|| FB
 
 Inspired by fishercoder1534's problem practising. Also borrowed few solutions from fishercoder1534. Thank you for the wonderful solutions
 
