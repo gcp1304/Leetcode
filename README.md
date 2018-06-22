@@ -103,7 +103,8 @@
 |636|[Exclusive Time of Functions](https://leetcode.com/problems/exclusive-time-of-functions/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_636.java) | O(n) |O(n/2) |Medium | Stack | FB
 |637|[Average of Levels in Binary Tree](https://leetcode.com/problems/average-of-levels-in-binary-tree/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_637.java) | O(n) |O(1) |Easy| | FB
 |639|[Decode Ways II](https://leetcode.com/problems/decode-ways-ii/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_639.java) | O(n) |O(n) |Hard| DP | FB
-|647|[Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_647.java) | O(n^2) |O(1) |Medium | DP | FB   
+|647|[Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_647.java) | O(n^2) |O(1) |Medium | DP | FB
+|670|[Maximum Swap](https://leetcode.com/problems/maximum-swap/description/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_647.java)]    | O(n^2) - n is number of digits in a given number | O(n) | Medium ||FB
 |695|[Max Area of Island](https://leetcode.com/problems/max-area-of-island/description/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_695.java)|O(m*n)| O(1) |Easy|DFS|FB
 |852|[Peak Index in a Mountain Array](https://leetcode.com/problems/peak-index-in-a-mountain-array/description/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_852.java)|O(logN)| O(1) |Easy|Binary Search|
 |853|[Car Fleet](https://leetcode.com/problems/car-fleet/description/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_853.java)|O(NlogN), where N is the number of cars| O(N) |Medium||
