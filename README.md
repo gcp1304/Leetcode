@@ -26,6 +26,7 @@
 |38|[Count and Say](https://leetcode.com/problems/count-and-say/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_38.java)|O(n*2^n)|O(n)|Easy||FB
 |39|[Combination Sum](https://leetcode.com/problems/combination-sum/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_39.java)|O(k*n^k)|O(k)|Medium|Backtracking|
 |40|[Combination Sum II](https://leetcode.com/problems/combination-sum-ii/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_40.java)|O(k*n^k)|O(k)|Medium|Backtracking|FB
+|42|[Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/description/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_42.java)|O(n)|O(n)|Hard|DP|FB
 |43|[Multiply Strings](https://leetcode.com/problems/multiply-strings/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_43.java)|O(n)|O(1)|Medium|Array|FB
 |44|[Wildcard Matching](https://leetcode.com/problems/wildcard-matching/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_44.java)|O(nm)|O(nm)|Hard|DP|FB
 |46|[Permutations](https://leetcode.com/problems/permutations/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_46.java)| O(n*n!) | O(n) |Medium | Backtracking|
