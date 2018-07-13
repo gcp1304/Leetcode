@@ -10,18 +10,20 @@
 |7|[Reverse Integer](https://leetcode.com/problems/reverse-integer/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_7.java)| O(1) | O(1) | Easy | - | BLOOMBERG, AAPL
 |8|[String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_8.java)| O(1) | O(1) | Easy | - | BLOOMBERG, AAPL
 |9|[Palindrome Number](https://leetcode.com/problems/palindrome-number/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_9.java)| O(1) | O(1) | Easy | - | -
-|10|[Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_10.java)| O(m*n)| O(m*n) |Hard| DP | FB
+|10|[Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_10.java)| O(m*n)| O(m*n) |Hard| DP | FB, GOOG, UBER, TWTR, AIRBNB, BLOOMBERG
 |11|[Container With Most Water](https://leetcode.com/problems/container-with-most-water/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_11.java)| O(n)| O(1) |Medium| Arrays | BLOOMBERG
 |12|[Integer To Roman](https://leetcode.com/problems/integer-to-roman/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_12.java)| O(1)| O(1) |Medium| Math, String | -
 |13|[Roman To Integer](https://leetcode.com/problems/roman-to-integer)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_13.java)|O(1)|O(1)|Easy|Math,String|FB
 |14|[Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_14.java)|O(S) (S is the sum of all characters in all strings)|O(1)|Easy|String| -
 |17|[**__Letter Combinations of a Phone Number__**](https://leetcode.com/problems/letter-combinations-of-a-phone-number/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_17.java)|O(n*4^n)|O(n)|Medium|Backtracking|FB
 |20|[Valid Parentheses](https://leetcode.com/problems/valid-parentheses)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_20.java)|O(n)|O(n)|Easy|Stack|FB
+|21|[Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_21.java)|O(n)|O(n)|Easy|Iterative and Recursion|
 |23|[Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_23.java)|O(nlogk)|O(k)|Hard|Heap|FB
 |25|[Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_25.java)|O(n)|O(1)|Hard|Recursion, LinkedList|FB
 |26|[Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_26.java)|O(n)|O(1)|Easy|Arrays|FB
 |28|[Implement strStr()](https://leetcode.com/problems/implement-strstr)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_28.java)|O(n)|O(1)|Easy|String|FB
 |29|[Divide Two Integers](https://leetcode.com/problems/divide-two-integers/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_29.java)|?|?|Medium||FB
+|30|[Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_30.java)|O(n^2)|O(n)|Hard| HashMap, Sliding Window|
 |33|[Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_33.java)|O(logn)|O(1)|Medium|Binary Search|FB
 |38|[Count and Say](https://leetcode.com/problems/count-and-say/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_38.java)|O(n*2^n)|O(n)|Easy||FB
 |39|[Combination Sum](https://leetcode.com/problems/combination-sum/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_39.java)|O(k*n^k)|O(k)|Medium|Backtracking|
@@ -35,10 +37,13 @@
 |50|[Pow(x, n)](https://leetcode.com/problems/powx-n/description/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_50.java)|O(logn)|O(logn)|Medium||FB
 |56|[Merge Intervals](https://leetcode.com/problems/merge-intervals/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_56.java)|O(n*logn)|O(1)|Medium| Array, Sort|FB
 |57|[Insert Intervals](https://leetcode.com/problems/insert-interval/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_57.java)|O(n)|O(1)|Hard| Array, Sort | FB
+|76|[Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_76.java)|O(n)|O(k)|Hard|Sliding Window|
 |77|[Combinations](https://leetcode.com/problems/combinations/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_77.java)|O(n!) |O(n)|Medium|Backtracking||
 |78|[Subsets](https://leetcode.com/problems/subsets/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_78.java)|O(n^2) |O(1)|Medium|Backtracking|
 |90|[Subsets II](https://leetcode.com/problems/subsets-ii/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_90.java)|O(n^2) |O(1)|Medium|Backtracking|
 |91|[Decode Ways](https://leetcode.com/problems/decode-ways/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_91.java)| O(n)|O(n) |Medium| DP|
+|98|[Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_98.java) | O(n) | O(h) |Medium | DFS/Recursion|
+|100|[Same Tree](https://leetcode.com/problems/same-tree/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_100.java)| O(n)|O(h) |Easy| DFS|
 |102|[Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_102.java)|O(n| O(h) | Medium |BFS | FB
 |121|[Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_121.java)|O(n)|O(1)|Easy| Array |FB
 |125|[Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_125.java)|O(n)|O(1)|Easy| Two Pointers|FB
@@ -48,6 +53,7 @@
 |133|[Clone Graph](https://leetcode.com/problems/clone-graph/description/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_133.java)|O(n)|O(n)|Medium| DFS, BFS|FB
 |138|[Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/description/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_138.java)|O(n)|O(n)|Medium| HashMap |FB
 |139|[Word Break](https://leetcode.com/problems/word-break/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_139.java)|O(n^3) or O(n^2)|O(n)|Medium| DP, BFS |FB
+|144|[Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_144.java)| O(n)|O(h)  |Medium| DFS
 |146|[LRU Cache](https://leetcode.com/problems/lru-cache/) | [Solution](./problems/src/main/java/com/chandra/problems/Problem_146.java)|amortized O(1) | O(k) | Hard| Doubly Linked List, HashMap| FB
 |151|[Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/) | [Solution](./problems/src/main/java/com/chandra/problems/Problem_151.java)|O(n) | O(n) | Medium| |
 |152|[Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/) | [Solution](./problems/src/main/java/com/chandra/problems/Problem_152.java)|O(n) | O(1) | Medium| | FB
@@ -81,16 +87,19 @@
 |300|[Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_300.java)|O(nlogn)|O(n)|Medium|DP|FB
 |*301|[Remove Invalid Parentheses](https://leetcode.com/problems/remove-invalid-parentheses/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_301.java)|O(nk), k: # of recursion calls for DFS, O(n) for BFS| - |Hard|BFS, DFS|FB
 |*314|[Binary Tree Vertical Order Traversal](https://leetcode.com/problems/binary-tree-vertical-order-traversal/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_314.java)|O(h)| O(n) |Medium|BFS|FB
+|323|[Number of Connected Components in an Undirected Graph](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_323.java)| O(?)|O(?)| Medium| DFS|
 |*325|[Maximum Size Subarray Sum Equals k](https://leetcode.com/problems/maximum-size-subarray-sum-equals-k/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_325.java)|O(n)| O(n) |Medium|HashTable|FB
 |334|[Increasing Triplet Subsequence](https://leetcode.com/problems/increasing-triplet-subsequence/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_334.java)|O(n)| O(1) |Medium|-|FB
 |*340|[Longest Substring with At Most K Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_340.java)|O(n)| O(n) |Hard|Sliding Window|FB
 |341|[Flatten Nested List Iterator](https://leetcode.com/problems/flatten-nested-list-iterator/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_341.java)|O(n)| O(n) |Medium|Stack|FB
 |377|[Combination Sum IV](https://leetcode.com/problems/combination-sum-iv/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_377.java)|O(n^2)| O(n) |Medium|DP|FB
 |380|[Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_380.java)|O(1)| O(1) |Medium|Design, HashMap|UBER, FB, GOOG, AMZN, TWTR
+|388|[Longest Absolute File Path](https://leetcode.com/problems/longest-absolute-file-path/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_388.java)| O(n)|O(d) |Medium| Stack|
 |394|[Decode String](https://leetcode.com/problems/decode-string/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_394.java)|O(n)| O(1) |Medium||FB
 |398|[Random Pick Index](https://leetcode.com/problems/random-pick-index/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_398.java)||  |Medium|HashMap|FB
 |404|[Sum of Left Leaves](https://leetcode.com/problems/sum-of-left-leaves/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_404.java)|O(n)| O(1) |Easy|Recursive|FB
 |410|[Split Array Largest Sum](https://leetcode.com/problems/split-array-largest-sum/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_410.java)|O(nlogn)| O(1) |Hard|Binary Search|FB
+|438|[Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_438.java)| O(n)|O(1) |Easy| Sliding Window|
 |461|[Hamming Distance](https://leetcode.com/problems/hamming-distance/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_461.java)|O(n)| O(1) |Easy|Bit Manipulation|FB
 |463|[Island Perimeter](https://leetcode.com/problems/island-perimeter/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_463.java)|O(m*n)| O(1) |Easy||FB
 |477|[Total Hamming Distance](https://leetcode.com/problems/total-hamming-distance/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_477.java)|O(n)| O(1) |Medium|Bit Manipulation|FB
@@ -98,8 +107,10 @@
 |523|[Continuous Subarray Sum](https://leetcode.com/problems/continuous-subarray-sum/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_523.java)|O(n)| O(1) |Medium|DP|FB
 |525|[Continuous Array](https://leetcode.com/problems/contiguous-array/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_525.java)|O(n)| O(n) |Medium|HashMap|FB
 |535|[Encode and Decode TinyURL](https://leetcode.com/problems/encode-and-decode-tinyurl/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_535.java) | O(1) |O(n) |Medium | Design | FB
+|542|[01 Matrix](https://leetcode.com/problems/01-matrix/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_542.java) | O(m*n) |O(n) |Medium | BFS|
 |543|[Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_543.java) | O(n) |O(h) | Easy | Tree/DFS/Recursion | FB
 |554|[Brick Wall](https://leetcode.com/problems/brick-wall/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_554.java) | O(n) (n is total number of bricks in the wall) |O(m) (m is width of the wall) |Medium | HashMap | FB
+|567|[Permutation in String](https://leetcode.com/problems/permutation-in-string/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_567.java) | O(l1 + 26*(l2 - l1)) |O(1) | Medium | Sliding Windows |
 |572|[Subtree of Another Tree](https://leetcode.com/problems/subtree-of-another-tree/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_572.java) | O(m*n) |O(1) |Easy | Tree | FB
 |636|[Exclusive Time of Functions](https://leetcode.com/problems/exclusive-time-of-functions/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_636.java) | O(n) |O(n/2) |Medium | Stack | FB
 |637|[Average of Levels in Binary Tree](https://leetcode.com/problems/average-of-levels-in-binary-tree/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_637.java) | O(n) |O(1) |Easy| | FB

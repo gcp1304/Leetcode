@@ -2,6 +2,8 @@ package com.chandra.problems;
 
 import com.chandra.common.TreeNode;
 
+import java.util.ArrayDeque;
+import java.util.Deque;
 import java.util.Stack;
 
 /**
@@ -81,6 +83,26 @@ public class Problem_230 {
             }
 
             return - 1;
+        }
+    }
+
+    public class Solution_3 {
+        public int kthSmallest(TreeNode root, int k) {
+            Deque<TreeNode> stack = new ArrayDeque<>();
+
+            while (root != null || !stack.isEmpty()) {
+                if (root != null) {
+                    stack.push(root);
+                    root = root.left;
+                } else {
+                    root = stack.pop();
+                    if (--k == 0) return root.val;
+
+                    root = root.right;
+                }
+            }
+
+            return -1;
         }
     }
 }

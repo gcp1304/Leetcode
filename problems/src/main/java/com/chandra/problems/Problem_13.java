@@ -5,12 +5,43 @@ import java.util.Map;
 
 /**
  * 13. Roman to Integer
- *
+ * <p>
  * Given a roman numeral, convert it to an integer.
  * Input is guaranteed to be within the range from 1 to 3999.
- * */
+ */
 
 public class Problem_13 {
+    public static class Solution {
+        public int romanToInt(String s) {
+            int result = 0;
+            if (s == null || s.length() == 0) return result;
+
+            HashMap<Character, Integer> map = new HashMap<>();
+            map.put('I', 1);
+            map.put('V', 5);
+            map.put('X', 10);
+            map.put('L', 50);
+            map.put('C', 100);
+            map.put('D', 500);
+            map.put('M', 1000);
+
+
+            // add last char's value
+            result = map.get(s.charAt(s.length() - 1));
+            // start from last but one character
+            for (int i = s.length() - 2; i >= 0; i--) {
+                // if current char value is greater than equal to next char value then add the value to result
+                if (map.get(s.charAt(i)) >= map.get(s.charAt(i + 1)))
+                    result += map.get(s.charAt(i));
+                else
+                    // else subtract the value
+                    result -= map.get(s.charAt(i));
+            }
+
+            return result;
+        }
+    }
+
 
     public static class Solution1 {
         public int romanToInt(String s) {
@@ -27,15 +58,15 @@ public class Problem_13 {
             map.put('M', 1000);
 
             result += map.get(s.charAt(0));
-            for (int i=1;i<s.length();i++) {
+            for (int i = 1; i < s.length(); i++) {
                 int val = map.get(s.charAt(i));
-                if (val > map.get(s.charAt(i-1))) {
+                if (val > map.get(s.charAt(i - 1))) {
                     //A smaller number in front of a larger number means subtraction,
                     // all else means addition. For example, IV means 4, VI means 6.
                     // subtract previous char value
-                    val -= map.get(s.charAt(i-1));
+                    val -= map.get(s.charAt(i - 1));
                     // remove the previous char value from result
-                    result -= map.get(s.charAt(i-1));
+                    result -= map.get(s.charAt(i - 1));
                 }
                 // add the new computed val to result
                 result += val;
@@ -60,11 +91,11 @@ public class Problem_13 {
             map.put('D', 500);
             map.put('M', 1000);
 
-            result = map.get(s.charAt(s.length()-1));
+            result = map.get(s.charAt(s.length() - 1));
 
             // scan from last but one
-            for (int i=s.length()-2;i>=0;i--) {
-                if (map.get(s.charAt(i)) >= map.get(s.charAt(i+1))) {
+            for (int i = s.length() - 2; i >= 0; i--) {
+                if (map.get(s.charAt(i)) >= map.get(s.charAt(i + 1))) {
                     // add if current element is > next element
                     result += map.get(s.charAt(i));
                 } else {

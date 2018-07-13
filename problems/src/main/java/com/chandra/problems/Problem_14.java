@@ -20,6 +20,24 @@ package com.chandra.problems;
  * All given inputs are in lowercase letters a-z.
  */
 public class Problem_14 {
+
+    public static class Solution {
+
+        // Horizontal Scanning
+        public String longestCommonPrefix(String[] strs) {
+            if (strs.length == 0) return "";
+
+            String prefix = strs[0]; // take first str as prefix
+            for (int i = 1; i < strs.length; i++) { // loop through rest of the strings
+                while (strs[i].indexOf(prefix) != 0) { // check if prefix is present in the current string, if present then index will be zero if not reduce prefix by character
+                    prefix = prefix.substring(0, prefix.length()-1); // if prefix is not present then keep reducing prefix by character from last
+                    if (prefix.isEmpty()) return ""; // at any time if we exhaust all characters in prefix return ""
+                }
+            }
+            return prefix; // if we exit the forloop then we have LCP
+        }
+    }
+
     public static class Solution_1 {
         public String longestCommonPrefix(String[] strs) {
 

@@ -31,12 +31,15 @@ public class Problem_200 {
     public static class Solution1 {
 
         public int numIslands(char[][] grid) {
-            int count = 0;
+            int count = 0; // number of groups
+
+            // iterating through given grid to find a '1'
             for (int i = 0; i < grid.length; i++) {
                 for (int j = 0; j < grid[0].length; j++) {
                     if (grid[i][j] == '1') {
+                        count++; // start a group and visit all members of this group using dfs
+
                         dfsExplore(grid, i, j);
-                        count++;
                     }
                 }
             }
@@ -44,8 +47,12 @@ public class Problem_200 {
         }
 
         private void dfsExplore(char[][] grid, int i, int j) {
+            // if out of bounds or at a cell with '0' or '*', simply stop and return | end the dfs
             if (i >= 0 && j >= 0 && i < grid.length && j < grid[0].length && grid[i][j] == '1') {
-                grid[i][j] = '0';
+
+                grid[i][j] = '*'; // destroying visited cells so they are not re-visited
+
+                // recursive dfs on all neighbours
                 dfsExplore(grid, i + 1, j);
                 dfsExplore(grid, i - 1, j);
                 dfsExplore(grid, i, j + 1);

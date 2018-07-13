@@ -1,6 +1,7 @@
 package com.chandra.problems;
 
-import java.util.Stack;
+import java.util.ArrayDeque;
+import java.util.Deque;
 
 /**
  * 20. Valid Parentheses
@@ -40,11 +41,34 @@ import java.util.Stack;
  */
 
 public class Problem_20 {
+
+    // This solution is faster than using stack
+    public static class Solution {
+        public boolean isValid(String s) {
+            if (s == null) return false;
+            char[] stack = new char[s.length()];
+            int head = 0;
+            for (int i=0;i<s.length();i++) {
+                char c = s.charAt(i);
+
+                // whenever we encounter open braces we store the respective closer brace and increment the index
+                if (c == '(') stack[head++] = ')';
+                else if (c == '{') stack[head++] = '}';
+                else if (c == '[') stack[head++] = ']';
+                // when we encounter close brace then we check the array for same closer brace by decrementing the index
+                // if we it doesn't match then we return false, if it matches then we continue.
+                else if (head == 0 || c != stack[--head]) return false;
+            }
+            // check if index is zero or not. If it's zero then it's a valid parenthesis else false
+            return head == 0;
+        }
+    }
+
     public static class Solution1 {
         public boolean isValid(String s) {
 
             if (s == null || s.length() == 1) return false;
-            Stack<Character> stack = new Stack<>();
+            Deque<Character> stack = new ArrayDeque<>();
 
             for (Character c : s.toCharArray()) {
                 if (c == ')' && (stack.isEmpty() || stack.pop() != '(')) return false;
