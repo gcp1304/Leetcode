@@ -69,7 +69,7 @@ public class Problem_3 {
             for (int start=0, end = 0; end < s.length(); end++) {
                 if (map.containsKey(s.charAt(end))) {
                     // whenever a repeated character is found we move start pointer in sliding window to the next index
-                    start = Math.max(map.get(end), start);
+                    start = Math.max(map.get(s.charAt(end)), start);
                 }
 
                 len = Math.max(len, end - start);
