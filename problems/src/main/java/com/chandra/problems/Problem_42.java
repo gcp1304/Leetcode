@@ -1,5 +1,20 @@
 package com.chandra.problems;
 
+/**
+ * 42. Trapping Rain Water
+ *
+ * Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it is able to trap after raining.
+
+Image Link -> https://leetcode.com/problems/trapping-rain-water/description/
+
+ The above elevation map is represented by array [0,1,0,2,1,0,1,3,2,1,2,1]. In this case, 6 units of rain water (blue section) are being trapped. Thanks Marcos for contributing this image!
+
+ Example:
+
+ Input: [0,1,0,2,1,0,1,3,2,1,2,1]
+ Output: 6
+ */
+
 public class Problem_42 {
     public static class Solution_1 {
 
@@ -8,7 +23,7 @@ public class Problem_42 {
          * Find maximum height of bar from the left end upto an index i in the array left_max.
          * Find maximum height of bar from the right end upto an index i in the array right_max.
          *
-         * Iterate over the \text{height}height array and update ans:
+         * Iterate over the height array and update ans:
          *  Add min(leftMax[i],rightMax[i])−height[i] to ans
          *
          *  Time Complexity: O(n)
