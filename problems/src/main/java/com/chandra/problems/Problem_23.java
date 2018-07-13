@@ -4,6 +4,7 @@ import com.chandra.common.ListNode;
 
 import java.util.Comparator;
 import java.util.PriorityQueue;
+import java.util.function.ToIntFunction;
 
 /**
  * 23. Merge k Sorted Lists
@@ -26,7 +27,12 @@ public class Problem_23 {
         public ListNode mergeKLists(ListNode[] lists) {
             if (lists == null || lists.length == 0) return null;
 
-            PriorityQueue<ListNode> pq = new PriorityQueue<>(lists.length, Comparator.comparingInt(o -> o.val));
+            PriorityQueue<ListNode> pq = new PriorityQueue<>(new Comparator<ListNode>() {
+                @Override
+                public int compare(ListNode o1, ListNode o2) {
+                    return o1.val - o2.val;
+                }
+            });
 
             for (ListNode list : lists) {
                 if (list != null) {
