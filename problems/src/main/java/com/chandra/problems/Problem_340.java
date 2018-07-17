@@ -10,11 +10,37 @@ package com.chandra.problems;
 
 public class Problem_340 {
 
+    public static class Solution {
+        public static int lengthOfLongestSubstringKDistinct(String s, int k) {
+            int[] map = new int[128];
+            int start = 0, end = 0, maxLen = 0, counter = 0;
+
+            while (end < s.length()) {
+                if (map[s.charAt(end)] == 0) {
+                    map[s.charAt(end)]++;
+                    counter++;
+                }
+                end++;
+
+                while (counter > k) {
+                    map[s.charAt(start)]--;
+                    if (map[s.charAt(start)] == 0) counter--;
+                    start++;
+                }
+
+                maxLen = Math.max(maxLen, end - start);
+            }
+
+            return maxLen;
+        }
+    }
+
     public static class Solution_1 {
-        public int lengthOfLongestSubstringKDistinct(String s, int k) {
+        // shorter version of above solution
+        public static int lengthOfLongestSubstringKDistinct(String s, int k) {
             int[] count = new int[128];
             int start = 0, end = 0, max = 0, len = 0;
-
+            // Sliding window mechanism
             while (end < s.length()) {
                 if (count[s.charAt(end++)]++ == 0) len++;
 
@@ -49,5 +75,12 @@ public class Problem_340 {
 
             return res;
         }
+    }
+
+    public static void main(String[] args) {
+        String s = "eceba";
+        int k = 2;
+        System.out.println(Problem_340.Solution.lengthOfLongestSubstringKDistinct(s, k));
+        System.out.println(Problem_340.Solution_1.lengthOfLongestSubstringKDistinct(s, k));
     }
 }

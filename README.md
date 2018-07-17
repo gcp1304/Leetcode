@@ -90,11 +90,11 @@
 |323|[Number of Connected Components in an Undirected Graph](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_323.java)| O(?)|O(?)| Medium| DFS|
 |*325|[Maximum Size Subarray Sum Equals k](https://leetcode.com/problems/maximum-size-subarray-sum-equals-k/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_325.java)|O(n)| O(n) |Medium|HashTable|FB
 |334|[Increasing Triplet Subsequence](https://leetcode.com/problems/increasing-triplet-subsequence/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_334.java)|O(n)| O(1) |Medium|-|FB
-|*340|[Longest Substring with At Most K Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_340.java)|O(n)| O(n) |Hard|Sliding Window|FB
+|*340|[Longest Substring with At Most K Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_340.java)|O(n)| O(n) |Hard|Sliding Window|FB, GOOG
 |341|[Flatten Nested List Iterator](https://leetcode.com/problems/flatten-nested-list-iterator/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_341.java)|O(n)| O(n) |Medium|Stack|FB
 |377|[Combination Sum IV](https://leetcode.com/problems/combination-sum-iv/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_377.java)|O(n^2)| O(n) |Medium|DP|FB
 |380|[Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_380.java)|O(1)| O(1) |Medium|Design, HashMap|UBER, FB, GOOG, AMZN, TWTR
-|388|[Longest Absolute File Path](https://leetcode.com/problems/longest-absolute-file-path/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_388.java)| O(n)|O(d) |Medium| Stack|
+|388|[Longest Absolute File Path](https://leetcode.com/problems/longest-absolute-file-path/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_388.java)| O(n)|O(d) |Medium| Stack| GOOG
 |394|[Decode String](https://leetcode.com/problems/decode-string/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_394.java)|O(n)| O(1) |Medium||FB
 |398|[Random Pick Index](https://leetcode.com/problems/random-pick-index/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_398.java)||  |Medium|HashMap|FB
 |404|[Sum of Left Leaves](https://leetcode.com/problems/sum-of-left-leaves/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_404.java)|O(n)| O(1) |Easy|Recursive|FB
@@ -117,6 +117,7 @@
 |639|[Decode Ways II](https://leetcode.com/problems/decode-ways-ii/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_639.java) | O(n) |O(n) |Hard| DP | FB
 |647|[Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_647.java) | O(n^2) |O(1) |Medium | DP | FB
 |670|[**__Maximum Swap__**](https://leetcode.com/problems/maximum-swap/description/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_647.java)| O(n^2) - n is number of digits in a given number | O(n) | Medium ||FB
+|681|[**__Next Closest Time__**](https://leetcode.com/problems/parents-closest-time/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_681.java)| O(1) | O(1) | Medium ||GOOG
 |695|[Max Area of Island](https://leetcode.com/problems/max-area-of-island/description/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_695.java)|O(m*n)| O(1) |Easy|DFS|FB
 |852|[Peak Index in a Mountain Array](https://leetcode.com/problems/peak-index-in-a-mountain-array/description/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_852.java)|O(logN)| O(1) |Easy|Binary Search|
 |853|[Car Fleet](https://leetcode.com/problems/car-fleet/description/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_853.java)|O(NlogN), where N is the number of cars| O(N) |Medium||
