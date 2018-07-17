@@ -2,6 +2,7 @@ package com.chandra.problems;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
+import java.util.HashMap;
 import java.util.Stack;
 
 /**
@@ -40,6 +41,55 @@ import java.util.Stack;
  Notice that a/aa/aaa/file1.txt is not the longest file path, if there is another path aaaaaaaaaaaaaaaaaaaaa/sth.png
  */
 public class Problem_388 {
+
+    public static class Solution {
+        public int lengthLongestPath(String input) {
+
+            // To Store level and length of path at that level
+            HashMap<Integer, Integer> map = new HashMap<>();
+            map.put(0, 0); // level 0 -> length 0
+
+            int maxLength = 0, level = 1, currentLength = 0;
+            boolean isFile = false;
+
+            int index = 0;
+            while (index < input.length()) {
+                // Identify level by check # of \t
+                while (input.charAt(index) == '\t') {
+                    index++;
+                    level++;
+                }
+
+                // Determine the length at each level
+                // whenever we encounter \n then it's different level
+                while (index < input.length() && input.charAt(index) != '\n') {
+
+                    // if we encounter . then it's a file
+                    if (input.charAt(index) == '.') isFile = true;
+                    index++;
+                    currentLength++;
+                }
+
+                // If it's a file then update Max Length accordingly
+                if (isFile) {
+                    maxLength = Math.max(maxLength, currentLength + map.get(level-1)); // previous level length + current level length
+                } else {
+                    map.put(level, currentLength + map.get(level - 1) + 1); // update the current level length by adding current level length to previous level length and +1 is for /
+                }
+
+                // restore the invariants
+                isFile = false;
+                currentLength = 0;
+                level = 1;
+                index++; // after determining the level length index will be pointing at \n hence increment
+            }
+
+            return maxLength;
+        }
+    }
+
+
+
     public static class Solution_1 {
         public int lengthLongestPath(String input) {
             Deque<Integer> stack = new ArrayDeque<>();
@@ -77,6 +127,8 @@ public class Problem_388 {
 
     public static void main(String[] args) {
         Problem_388.Solution_1 solution_1 = new Solution_1();
+        Problem_388.Solution solution = new Solution();
         System.out.println(solution_1.lengthLongestPath("dir\n\tsubdir1\n\t\tfile1.ext\n\t\tsubsubdir1\n\tsubdir2\n\t\tsubsubdir2\n\t\t\tfile2.ext"));
+        System.out.println(solution.lengthLongestPath("dir\n\tsubdir1\n\t\tfile1.ext\n\t\tsubsubdir1\n\tsubdir2\n\t\tsubsubdir2\n\t\t\tfile2.ext"));
     }
 }

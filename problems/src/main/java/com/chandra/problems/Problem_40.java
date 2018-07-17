@@ -7,7 +7,8 @@ import java.util.List;
 /**
  * 40. Combination Sum II
  *
- * Given a collection of candidate numbers (candidates) and a target number (target), find all unique combinations in candidates where the candidate numbers sums to target.
+ * Given a collection of candidate numbers (candidates) and a target number (target), find all unique combinations
+ * in candidates where the candidate numbers sums to target.
 
  Each number in candidates may only be used once in the combination.
 
@@ -37,20 +38,21 @@ import java.util.List;
 
 public class Problem_40 {
     public static class Solution_1 {
-        public List<List<Integer>> combinationSum2(int[] candidates, int target) {
+        public static List<List<Integer>> combinationSum2(int[] candidates, int target) {
             List<List<Integer>> res = new ArrayList<>();
             Arrays.sort(candidates);
             backtracking(res, candidates, target, new ArrayList<Integer>(), 0);
             return res;
         }
 
-        private void backtracking(List<List<Integer>> res, int[] candidates, int target, ArrayList<Integer> currentCandidates, int start) {
+        private static void backtracking(List<List<Integer>> res, int[] candidates, int target, ArrayList<Integer> currentCandidates, int start) {
             if (target == 0) {
                 res.add(new ArrayList<>(currentCandidates));
                 return;
             }
 
             for (int i = start; i < candidates.length; i++) {
+                //TODO check this with solution
                 if (i > start && candidates[i] == candidates[i-1]) continue; // skip using duplicate numbers
 
                 currentCandidates.add(candidates[i]);
@@ -59,5 +61,12 @@ public class Problem_40 {
             }
         }
 
+    }
+
+    public static void main(String[] args) {
+        int[] arr = {10,1,2,7,6,1,5};
+        int target = 8;
+
+        System.out.println(Problem_40.Solution_1.combinationSum2(arr, target).toString());
     }
 }

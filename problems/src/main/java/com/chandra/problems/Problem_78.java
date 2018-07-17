@@ -29,13 +29,13 @@ public class Problem_78 {
     public static class Solution_1 {
         //This problem asks us to output all subsets. Every time we add a new valid element into subset,
         // it forms a valid 'subset'. This means that we have to add the subset list in every recursion.
-        public List<List<Integer>> subsets(int[] nums) {
+        public static List<List<Integer>> subsets(int[] nums) {
             List<List<Integer>> res = new ArrayList<>();
             backtracking(res, nums, new ArrayList<>(), 0);
             return res;
         }
 
-        private void backtracking(List<List<Integer>> res, int[] nums, List<Integer> curSubset, int start) {
+        private static void backtracking(List<List<Integer>> res, int[] nums, List<Integer> curSubset, int start) {
             res.add(new ArrayList<>(curSubset));
             for (int i = start; i < nums.length; i++) {
                 curSubset.add(nums[i]);
@@ -43,5 +43,10 @@ public class Problem_78 {
                 curSubset.remove(curSubset.size() - 1);
             }
         }
+    }
+
+    public static void main(String[] args) {
+        int[] nums = {1,2,3};
+        System.out.println(Problem_78.Solution_1.subsets(nums).toString());
     }
 }

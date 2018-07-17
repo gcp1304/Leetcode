@@ -24,25 +24,30 @@ import java.util.List;
 public class Problem_77 {
 
     public static class Solution_1 {
-        public List<List<Integer>> combine(int n, int k) {
+        public static List<List<Integer>> combine(int n, int k) {
             List<List<Integer>> res = new ArrayList<>();
             backtrack(n, k, res, new ArrayList<>(), 1); // we start with 1 not from zero since we are not looping through array
             return res;
         }
 
-        private void backtrack(int n, int k, List<List<Integer>> res, List<Integer> list, int start) {
+        private static void backtrack(int n, int k, List<List<Integer>> res, List<Integer> list, int start) {
             if (list.size() == k) {
                 res.add(new ArrayList<>(list));
                 return;
             }
 
             for (int i=start;i<=n;i++) {
-                if (list.size() <= k) {
+                if (list.size() < k) {
                     list.add(i);
                     backtrack(n, k, res, list, i+1);
                     list.remove(list.size()-1);
                 }
             }
         }
+    }
+
+    public static void main(String[] args) {
+        int n = 4, k = 2;
+        System.out.println(Problem_77.Solution_1.combine(n, k).toString());
     }
 }

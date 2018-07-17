@@ -32,15 +32,15 @@ public class Problem_76 {
             int left = 0, right = 0;
             int minLeft = 0;
             int minLen = Integer.MAX_VALUE;
-            int count = 0;
+            int count = freqMap.size();
             while (right < s.length()) {
                 char c = s.charAt(right++); // keep expanding the sliding window in S till we have all chars of T in sliding window
                 if (freqMap.containsKey(c)) {
                     freqMap.put(c, freqMap.get(c) - 1);
-                    if (freqMap.get(c) >= 0) count++; // keep a counter to check the characters of T present in S
+                    if (freqMap.get(c) == 0) count--; // keep a counter to check the characters of T present in S
                 }
 
-                while (count == t.length()) { // when we parse all the characters of T present in S, then
+                while (count == 0) { // when we parse all the characters of T present in S, then
                     if (right - left < minLen) { // check if the current substring len is minimum, if yes
                         minLeft = left; // store left pointer
                         minLen = right - left; // store the min length
@@ -49,7 +49,7 @@ public class Problem_76 {
                     char c1 = s.charAt(left++); // shrink the sliding window from left to proceed further to parse other chars in S
                     if (freqMap.containsKey(c1)) { // when shrinking we care about only chars common in S & T
                         freqMap.put(c1, freqMap.get(c1) + 1); // since we are shrinking from left, we update the freq map to reflect T chars present in sliding window
-                        if (freqMap.get(c1) > 0) count--; // also increment the counter to track the number of T chars being present in sliding window so far
+                        if (freqMap.get(c1) > 0) count++; // also increment the counter to track the number of T chars being present in sliding window so far
                     }
                 }
             }
