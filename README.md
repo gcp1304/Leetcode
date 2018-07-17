@@ -103,6 +103,7 @@
 |461|[Hamming Distance](https://leetcode.com/problems/hamming-distance/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_461.java)|O(n)| O(1) |Easy|Bit Manipulation|FB
 |463|[Island Perimeter](https://leetcode.com/problems/island-perimeter/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_463.java)|O(m*n)| O(1) |Easy||FB
 |477|[Total Hamming Distance](https://leetcode.com/problems/total-hamming-distance/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_477.java)|O(n)| O(1) |Medium|Bit Manipulation|FB
+|482|[License Key Formatting](https://leetcode.com/problems/license-key-formatting/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_482.java) | O(n) |O(n) |Medium| | GOOG 
 |494|[Target Sum](https://leetcode.com/problems/target-sum/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_494.java)|O(2^n)| O(1) |Medium|Recursive|FB
 |523|[Continuous Subarray Sum](https://leetcode.com/problems/continuous-subarray-sum/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_523.java)|O(n)| O(1) |Medium|DP|FB
 |525|[Continuous Array](https://leetcode.com/problems/contiguous-array/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_525.java)|O(n)| O(n) |Medium|HashMap|FB
