@@ -37,6 +37,7 @@
 |50|[Pow(x, n)](https://leetcode.com/problems/powx-n/description/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_50.java)|O(logn)|O(logn)|Medium||FB
 |56|[Merge Intervals](https://leetcode.com/problems/merge-intervals/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_56.java)|O(n*logn)|O(1)|Medium| Array, Sort|FB
 |57|[Insert Intervals](https://leetcode.com/problems/insert-interval/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_57.java)|O(n)|O(1)|Hard| Array, Sort | FB
+|66|[Plus One](https://leetcode.com/problems/plus-one/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_66.java)|O(n)|O(1)|Easy|| GOOG
 |76|[Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_76.java)|O(n)|O(k)|Hard|Sliding Window|
 |77|[Combinations](https://leetcode.com/problems/combinations/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_77.java)|O(n!) |O(n)|Medium|Backtracking||
 |78|[Subsets](https://leetcode.com/problems/subsets/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_78.java)|O(n^2) |O(1)|Medium|Backtracking|
