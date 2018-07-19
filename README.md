@@ -101,6 +101,7 @@
 |394|[Decode String](https://leetcode.com/problems/decode-string/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_394.java)|O(n)| O(1) |Medium||FB
 |398|[Random Pick Index](https://leetcode.com/problems/random-pick-index/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_398.java)||  |Medium|HashMap|FB
 |404|[Sum of Left Leaves](https://leetcode.com/problems/sum-of-left-leaves/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_404.java)|O(n)| O(1) |Easy|Recursive|FB
+|406|[Queue Reconstruction by Height](https://leetcode.com/problems/queue-reconstruction-by-height/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_406.java)|O(nlogn)| O(n) |Medium|PQ, Array sort|GOOG
 |410|[Split Array Largest Sum](https://leetcode.com/problems/split-array-largest-sum/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_410.java)|O(nlogn)| O(1) |Hard|Binary Search|FB
 |417|[Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_417.java) | O(m*n*Max(m,n)) |O(m*n) |Medium| DFS | GOOG
 |438|[Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_438.java)| O(n)|O(1) |Easy| Sliding Window|

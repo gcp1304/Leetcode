@@ -29,6 +29,40 @@ import java.util.*;
  */
 public class Problem_139 {
 
+    /**
+     * Algorithm
+     * The given problem can be solved by using Dynamic Programming as described below:
+     1. Create a temporary boolean array validWords[] defined as:
+     validWords[i]
+     = true, if input substring from 0 to i forms valid words string
+     = false, otherwise
+     2. For i = 0 to input.length,
+     a. If input substring from 0...i is present in the dictionary, then set validWords[i] = true
+     b. If validWords[i] == true, from j = i+1 to n-1, check if substring from i+1 to j, for all values of j (= i+1 to n-1), is present in the dictionary and set validWords[j] to true if found in the dictionary.
+     3. When we reach the end of the string, if validWords[n-1] is true, then return true else return false.
+     */
+    // Time O(N^2), space - O(N)
+    public static class Solution {
+        public boolean wordBreak(String s, List<String> wordDict) {
+            boolean[] breakable = new boolean[s.length()];
+
+            for (int i = 0; i < s.length(); i++) {
+                if (wordDict.contains(s.substring(0, i+1))) breakable[i] = true;
+
+                if (i == s.length()-1 && breakable[i]) return true;
+
+                if (breakable[i]) {
+                    for (int j = i+1; j < s.length(); j++) {
+                        if (wordDict.contains(s.substring(i+1, j+1))) breakable[j] = true;
+                        if (j == s.length()-1 && breakable[i]) return true;
+                    }
+                }
+            }
+
+            return false;
+        }
+    }
+
     /*
      The idea here to keep checkpoint whenever we encounter a word which is present in list in conjunction with
      previous encountered word if any. Once we reach the end of the string length we return the result.
