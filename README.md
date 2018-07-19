@@ -114,6 +114,7 @@
 |482|[License Key Formatting](https://leetcode.com/problems/license-key-formatting/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_482.java) | O(n) |O(n) |Medium| | GOOG 
 |494|[Target Sum](https://leetcode.com/problems/target-sum/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_494.java)|O(2^n)| O(1) |Medium|Recursive|FB
 |523|[Continuous Subarray Sum](https://leetcode.com/problems/continuous-subarray-sum/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_523.java)|O(n)| O(1) |Medium|DP|FB
+|524|[Longest Word in Dictionary through Deleting](https://leetcode.com/problems/longest-word-in-dictionary-through-deleting/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_524.java) | O(n) |O(n) | Medium | Sort, Strings | GOOG
 |525|[Continuous Array](https://leetcode.com/problems/contiguous-array/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_525.java)|O(n)| O(n) |Medium|HashMap|FB
 |535|[Encode and Decode TinyURL](https://leetcode.com/problems/encode-and-decode-tinyurl/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_535.java) | O(1) |O(n) |Medium | Design | FB
 |542|[01 Matrix](https://leetcode.com/problems/01-matrix/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_542.java) | O(m*n) |O(n) |Medium | BFS|

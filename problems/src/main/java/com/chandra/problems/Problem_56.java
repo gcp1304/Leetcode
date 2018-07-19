@@ -5,6 +5,7 @@ import com.chandra.common.Interval;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+import java.util.function.ToIntFunction;
 
 /**
  * 56. Merge Intervals
@@ -31,7 +32,12 @@ public class Problem_56 {
             }
 
             List<Interval> res = new ArrayList<>();
-            intervals.sort(Comparator.comparingInt(interval -> interval.start));
+            intervals.sort(new Comparator<Interval>() {
+                @Override
+                public int compare(Interval o1, Interval o2) {
+                    return o1.start - o2.start;
+                }
+            });
 
             int start = intervals.get(0).start;
             int end = intervals.get(0).end;
