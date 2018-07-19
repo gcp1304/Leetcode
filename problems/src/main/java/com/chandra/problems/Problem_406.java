@@ -67,13 +67,18 @@ public class Problem_406 {
             Arrays.sort(people, new Comparator<int[]>() {
                 @Override
                 public int compare(int[] o1, int[] o2) {
+                    // if height is same then we compare k or else compare h
                     return o1[0] == o2[0] ? o1[1] - o2[1] : o2[0] - o1[0];
                 }
             });
+
+            // build list based on the position of k
             List<int[]> list = new ArrayList<>();
             for (int[] person : people) {
                 list.add(person[1], person);
             }
+
+            // convert the list to array and return
             return list.toArray(people);
         }
 
