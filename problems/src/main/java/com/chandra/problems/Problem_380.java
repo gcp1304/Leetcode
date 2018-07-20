@@ -54,7 +54,6 @@ public class Problem_380 {
 
         HashMap<Integer, Integer> valToInd;
         List<Integer> list;
-        int ind = 0;
 
         /** Initialize your data structure here. */
         public RandomizedSet() {

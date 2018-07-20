@@ -46,13 +46,11 @@ public class Problem_146 {
              */
 
             private Map<Integer, Integer> cache;
-            private final int max;
 
             public LRUCache(int capacity) {
-                max = capacity;
                 cache = new LinkedHashMap<Integer, Integer>(capacity, 1.0f, true) {
                     public boolean removeEldestEntry(Map.Entry eldest) {
-                        return cache.size() > max;
+                        return cache.size() > capacity;
                     }
                 };
             }

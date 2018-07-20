@@ -81,8 +81,9 @@
 |236|[Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_236.java)|O(n)|O(h)|Medium|BST, DFS|FB
 |238|[**__Product of Array Except Self__**](https://leetcode.com/problems/product-of-array-except-self)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_238.java)|O(n)|O(1)|Medium|Array|FB, Yelp
 |*252|[Meeting Rooms](https://leetcode.com/problems/meeting-rooms/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_252.java)|O(nlogn)|O(1)|Easy|Arrays|FB
-|*253|[Meeting Rooms](https://leetcode.com/problems/meeting-rooms-ii/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_253.java)|O(nlogn)|O(h)|Medium|Heap, PQ|FB
+|*253|[Meeting Rooms-II](https://leetcode.com/problems/meeting-rooms-ii/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_253.java)|O(nlogn)|O(h)|Medium|Heap, PQ|FB
 |257|[Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_257.java)|O(n*h)|O(h)|Easy|DFS, Recursion|FB
+|266|[Palindrome Permutation](https://leetcode.com/problems/palindrome-permutation/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_266.java)| O(n)|O(1) |Easy||GOOG
 |273|[Integer to English Words](https://leetcode.com/problems/integer-to-english-words)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_273.java)|O(n)|O(1) | Hard | String | FB
 |278|[First Bad Version](https://leetcode.com/problems/first-bad-version)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_278.java)|O(logn)|O(1)|Easy|Binary Search|FB
 |284|[Peeking Iterator](https://leetcode.com/problems/peeking-iterator/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_284.java)| O(n)|O(n) |Medium| Design | GOOG
@@ -103,6 +104,7 @@
 |377|[Combination Sum IV](https://leetcode.com/problems/combination-sum-iv/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_377.java)|O(n^2)| O(n) |Medium|DP|FB
 |380|[Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_380.java)|O(1)| O(1) |Medium|Design, HashMap|UBER, FB, GOOG, AMZN, TWTR
 |388|[Longest Absolute File Path](https://leetcode.com/problems/longest-absolute-file-path/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_388.java)| O(n)|O(d) |Medium| Stack| GOOG
+|389|[Find the Difference](https://leetcode.com/problems/find-the-difference/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_389.java)| O(n)|O(1) | Easy| |GOOG
 |394|[Decode String](https://leetcode.com/problems/decode-string/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_394.java)|O(n)| O(1) |Medium||FB
 |398|[Random Pick Index](https://leetcode.com/problems/random-pick-index/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_398.java)||  |Medium|HashMap|FB
 |404|[Sum of Left Leaves](https://leetcode.com/problems/sum-of-left-leaves/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_404.java)|O(n)| O(1) |Easy|Recursive|FB

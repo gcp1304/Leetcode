@@ -29,9 +29,9 @@ public class Problem_463 {
                     if (grid[i][j] == 1) {
                         sides = sides + 4
                                 - (i > 0 ? grid[i - 1][j] : 0) // check for top
-                                - (i < grid.length ? grid[i + 1][j] : 0) // check right
+                                - (i < grid.length-1 ? grid[i + 1][j] : 0) // check right
                                 - (j > 0 ? grid[i][j - 1] : 0) // check left
-                                - (j < grid[0].length ? grid[i][j + 1] : 0);
+                                - (j < grid[0].length-1 ? grid[i][j + 1] : 0);
                     }
                 }
             }
