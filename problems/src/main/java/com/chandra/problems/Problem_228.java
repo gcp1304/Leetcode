@@ -26,16 +26,16 @@ public class Problem_228 {
 
         if (nums == null || nums.length == 0) return result;
 
-        StringBuilder sb = new StringBuilder();
         int start = nums[0];
         for (int i=1;i<nums.length;i++) {
+            // if current number is same as previous_num + 1, then different range so add to result
             if (nums[i] != nums[i-1] + 1) {
-                result.add(start + "" + (start == nums[i-1] ? "" : "->" + nums[i-1]));
-                start = nums[i];
+                result.add(start + (start == nums[i-1] ? "" : "->" + nums[i-1])); // this will be range till previous number
+                start = nums[i]; // start will be current number for new range
             }
         }
-
-        result.add(start + "" + (start == nums[nums.length-1] ? "" : "->"  + nums[nums.length-1]));
+        // last number from to be added to result
+        result.add(start + (start == nums[nums.length-1] ? "" : "->"  + nums[nums.length-1]));
 
         return result;
     }
