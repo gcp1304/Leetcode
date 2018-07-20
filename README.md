@@ -73,7 +73,8 @@
 |209|[Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_209.java)|O(n) | O(1) | Medium| Arrays | FB
 |211|[Add and Search Word - Data structure design](https://leetcode.com/problems/add-and-search-word-data-structure-design)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_211.java)|O(n) | O(h) | Medium| Trie | FB
 |215|[Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_215.java)|O(nlogn)|O(n)|Medium|PQ, Heap | FB
-|216|[Combination Sum III](https://leetcode.com/problems/combination-sum-iii/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_216.java)| O(k * C(n, k))|O(k) | Medium| Backtracking| 
+|216|[Combination Sum III](https://leetcode.com/problems/combination-sum-iii/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_216.java)| O(k * C(n, k))|O(k) | Medium| Backtracking|
+|228|[Summary Ranges](https://leetcode.com/problems/summary-ranges/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_228.java)| O(n)|O(1)  |Medium| Array | GOOG 
 |230|[Kth Smallest Element in an BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/description/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_230.java)|O(n)|O(k)|Medium|DFS | FB
 |234|[Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_234.java)|O(n)|O(1)|Easy|Linked List|FB
 |235|[Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_235.java)|O(h)|O(1)|Easy|BST, DFS|FB
@@ -106,6 +107,7 @@
 |398|[Random Pick Index](https://leetcode.com/problems/random-pick-index/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_398.java)||  |Medium|HashMap|FB
 |404|[Sum of Left Leaves](https://leetcode.com/problems/sum-of-left-leaves/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_404.java)|O(n)| O(1) |Easy|Recursive|FB
 |406|[Queue Reconstruction by Height](https://leetcode.com/problems/queue-reconstruction-by-height/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_406.java)|O(nlogn)| O(n) |Medium|PQ, Array sort|GOOG
+|407|[Trapping Rain Water II](https://leetcode.com/problems/trapping-rain-water-ii/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem__407.java)| | | Hard| Heap | GOOG
 |410|[Split Array Largest Sum](https://leetcode.com/problems/split-array-largest-sum/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_410.java)|O(nlogn)| O(1) |Hard|Binary Search|FB
 |417|[Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_417.java) | O(m*n*Max(m,n)) |O(m*n) |Medium| DFS | GOOG
 |438|[Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_438.java)| O(n)|O(1) |Easy| Sliding Window|
