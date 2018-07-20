@@ -32,6 +32,34 @@ public class Problem_42 {
          *  We finally update ans using the stored values in O(n).
          */
 
+
+        /*
+        Visualize this
+        Case 1: You have only 2 buildings, the amount of water that can be trapped between 2 buildings depends on the smaller height building
+
+        Case 2: You have 3 buildings, imagine
+
+            left building of height - 4
+            middle building of height - 2
+            right building of height - 6
+
+            Now the amount of water that can be trapped is
+            a. since left building height is 4 and right build height is 6, then water is 4
+            b. since there's a building in the middle of height 2, so we remove height 2 from 4 of point a then we are left with 2 which is the result
+
+            The below diagram is not that elegant but just gives an idea of above case 2 explaination
+              |
+              |
+            |_|
+            |_|
+            |||
+            |||
+
+
+            Last word is all we have to find out is how much of water is trapped on top of the buildings when all the buildings are attached to each other with different heights
+
+         */
+
         public int trap(int[] height) {
             int leftMax[] = new int[height.length];
             int rightMax[] = new int[height.length];
@@ -58,6 +86,6 @@ public class Problem_42 {
     public static void main(String[] args) {
         Problem_42.Solution_1 solution_1 = new Solution_1();
 
-        System.out.println(solution_1.trap(new int[]{0,1,0,2,1,0,1,3,2,1,2,1})); // 6
+        System.out.println(solution_1.trap(new int[]{4,2,6})); // 6
     }
 }
