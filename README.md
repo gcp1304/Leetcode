@@ -84,6 +84,7 @@
 |257|[Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_257.java)|O(n*h)|O(h)|Easy|DFS, Recursion|FB
 |273|[Integer to English Words](https://leetcode.com/problems/integer-to-english-words)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_273.java)|O(n)|O(1) | Hard | String | FB
 |278|[First Bad Version](https://leetcode.com/problems/first-bad-version)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_278.java)|O(logn)|O(1)|Easy|Binary Search|FB
+|284|[Peeking Iterator](https://leetcode.com/problems/peeking-iterator/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_284.java)| O(n)|O(n) |Medium| Design | GOOG
 |*285|[Inorder Successor In BST](https://leetcode.com/problems/inorder-successor-in-bst/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_285.java)|O(h)|O(1)|Medium|BST|FB
 |*286|[Wall and Gates](https://leetcode.com/problems/walls-and-gates/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_286.java)|O(m*n)|O(g)|Medium|BFS, DFS|FB
 |295|[Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_295.java)|O(logn)|O(n)|Hard|PQ|FB
