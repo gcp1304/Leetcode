@@ -95,6 +95,7 @@
 |300|[Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_300.java)|O(nlogn)|O(n)|Medium|DP|FB
 |*301|[Remove Invalid Parentheses](https://leetcode.com/problems/remove-invalid-parentheses/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_301.java)|O(nk), k: # of recursion calls for DFS, O(n) for BFS| - |Hard|BFS, DFS|FB
 |*314|[Binary Tree Vertical Order Traversal](https://leetcode.com/problems/binary-tree-vertical-order-traversal/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_314.java)|O(h)| O(n) |Medium|BFS|FB
+|318|[Maximum Product of Word Lengths](https://leetcode.com/problems/maximum-product-of-word-lengths/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_318.java)| O(n^2)|O(n)  |Medium| | GOOG 
 |323|[Number of Connected Components in an Undirected Graph](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_323.java)| O(?)|O(?)| Medium| DFS|
 |*325|[Maximum Size Subarray Sum Equals k](https://leetcode.com/problems/maximum-size-subarray-sum-equals-k/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_325.java)|O(n)| O(n) |Medium|HashTable|FB
 |329|[Longest Increasing Path in a Matrix](https://leetcode.com/problems/longest-increasing-path-in-a-matrix/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_329.java)| O(m*n)|O(m*n) |Hard| DFS, DP | GOOG
