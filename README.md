@@ -72,6 +72,7 @@
 |208|[Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_208.java)|O(n) | O(1) | Medium| Trie | FB
 |209|[Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_209.java)|O(n) | O(1) | Medium| Arrays | FB
 |211|[Add and Search Word - Data structure design](https://leetcode.com/problems/add-and-search-word-data-structure-design)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_211.java)|O(n) | O(h) | Medium| Trie | FB
+|212|[Word Search II](https://leetcode.com/problems/word-search-ii/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_212.java)| O(m*n*l)|O(l) |Hard | Backtracking + Trie | GOOG
 |215|[Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_215.java)|O(nlogn)|O(n)|Medium|PQ, Heap | FB
 |216|[Combination Sum III](https://leetcode.com/problems/combination-sum-iii/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_216.java)| O(k * C(n, k))|O(k) | Medium| Backtracking|
 |228|[Summary Ranges](https://leetcode.com/problems/summary-ranges/)|[Solution](./problems/src/main/java/com/chandra/problems/Problem_228.java)| O(n)|O(1)  |Medium| Array | GOOG 
