@@ -16,30 +16,32 @@ package com.chandra.problems;
  Output: "bb"
  */
 public class Problem_5 {
-    // O(n^2)
-    public static class Solution_1 {
-        int start = 0;
-        int maxLen = 0;
+    public static class Solution {
+        int start = 0, maxLen = 0;
+
         public String longestPalindrome(String s) {
-            if (s.isEmpty()) return s;
-            for (int i=0;i<s.length();i++) {
-                expand(i, i, s); // odd number of characters
-                expand(i, i+1, s); // even number of characters
+            // if string is length is 1, then it's a palindrome return
+            if (s.length() < 2) return s;
+
+            // loop through the string character by character and keep expanding from the character to left and right
+            // then keep track of maxLen whenever you encounter a palindrome string
+            for (int i = 0; i < s.length() - 1; i++) {
+                expandPalindrome(s, i, i);
+                expandPalindrome(s, i, i + 1);
             }
 
             return s.substring(start, start + maxLen);
-
         }
 
-        private void expand(int left, int right, String s) {
+        private void expandPalindrome(String s, int left, int right) {
             while (left >= 0 && right < s.length() && s.charAt(left) == s.charAt(right)) {
                 left--;
                 right++;
-            }
 
-            if (maxLen < right - left) {
-                start = left+1;
-                maxLen = right - left - 1;
+                if (maxLen < right - left - 1) {
+                    maxLen = right - left - 1;
+                    start = left + 1;
+                }
             }
         }
     }
