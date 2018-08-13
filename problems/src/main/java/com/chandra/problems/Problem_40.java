@@ -52,12 +52,12 @@ public class Problem_40 {
             }
 
             for (int i = start; i < candidates.length; i++) {
-                //TODO check this with solution
                 if (i > start && candidates[i] == candidates[i-1]) continue; // skip using duplicate numbers
-
-                currentCandidates.add(candidates[i]);
-                backtracking(res, candidates, target - candidates[i], currentCandidates, i + 1);
-                currentCandidates.remove(currentCandidates.size() - 1);
+                if (candidates[i] <= target) {
+                    currentCandidates.add(candidates[i]);
+                    backtracking(res, candidates, target - candidates[i], currentCandidates, i + 1);
+                    currentCandidates.remove(currentCandidates.size() - 1);
+                }
             }
         }
 

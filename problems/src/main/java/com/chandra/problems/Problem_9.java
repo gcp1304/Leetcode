@@ -34,6 +34,7 @@ public class Problem_9 {
 
 
             int reverted = 0;
+            // inverst only right half digits in a number which can be checked by x>reverted in while loop
             while (x > reverted) {
                 reverted = reverted * 10 + x % 10;
                 x /= 10;

@@ -45,7 +45,7 @@ public class Problem_17 {
     }
 
     public static class Solution_2 {
-        //DFS
+        //DFS / backtracking
         public List<String> letterCombinations(String digits) {
             String[] mapping = new String[] {"", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
             List<String> res = new ArrayList<>();

@@ -64,7 +64,7 @@ public class Problem_286 {
     }
 
     public static class Solution_2 {
-        // DFS w/o visited state
+        // DFS with visited state
         public void wallsAndGates(int[][] rooms) {
             if (rooms == null || rooms.length == 0) return;
 

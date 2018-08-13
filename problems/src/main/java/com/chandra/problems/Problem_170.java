@@ -34,8 +34,7 @@ public class Problem_170 {
             private Map<Integer, Integer> table = new HashMap<>();
 
             public void add(int input) {
-                int count = table.containsKey(input) ? table.get(input) : 0;
-                table.put(input, count + 1);
+                table.put(input, table.getOrDefault(input, 0)+1);
             }
 
             public boolean find(int val) {

@@ -18,13 +18,38 @@ import java.util.Comparator;
 
 public class Problem_252 {
     public static class Solution1 {
-        public boolean canAttendMeetings(Interval[] intervals) {
-            Arrays.sort(intervals, Comparator.comparingInt(o -> o.start));
+        public static boolean canAttendMeetings(Interval[] intervals) {
+            Arrays.sort(intervals, new Comparator<Interval>() {
+                @Override
+                public int compare(Interval o1, Interval o2) {
+                    return o1.start - o2.start;
+                }
+            });
 
             for (int i = 0; i < intervals.length - 1; i++) {
                 if (intervals[i].end > intervals[i+1].start) return false;
             }
             return true;
+        }
+
+        public static void main(String[] args) {
+            Interval[] intervals = new Interval[3];
+            Interval zero = new Interval();
+            zero.start = 0;
+            zero.end = 30;
+            intervals[0] = zero;
+
+            Interval one = new Interval();
+            one.start = 5;
+            one.end = 10;
+            intervals[1] = one;
+
+            Interval two = new Interval();
+            two.start = 15;
+            two.end = 20;
+            intervals[2] = two;
+
+            System.out.println(canAttendMeetings(intervals));
         }
     }
 }

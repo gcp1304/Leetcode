@@ -112,6 +112,6 @@ public class Problem_76 {
     public static void main(String[] args) {
         String S = "ADOBECODEBANC", T = "ABC";
 
-        System.out.println(new Problem_76.Solution_1().minWindow(S, T));
+        System.out.println(new Problem_76.Solution_2().minWindow(S, T));
     }
 }

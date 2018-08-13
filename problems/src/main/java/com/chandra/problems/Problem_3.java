@@ -4,6 +4,19 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * 3. Longest Substring Without Repeating Characters
+ *
+ * Given a string, find the length of the longest substring without repeating characters.
+
+ Examples:
+
+ Given "abcabcbb", the answer is "abc", which the length is 3.
+
+ Given "bbbbb", the answer is "b", with the length of 1.
+
+ Given "pwwkew", the answer is "wke", with the length of 3. Note that the answer must be a substring, "pwke" is a subsequence and not a substring.
+ */
 public class Problem_3 {
 
     /**
@@ -65,6 +78,7 @@ public class Problem_3 {
             int len = 0;
             if (s.isEmpty()) return len;
 
+            // Hashmap hold latest index of the character
             HashMap<Character, Integer> map = new HashMap<>();
             for (int start=0, end = 0; end < s.length(); end++) {
                 if (map.containsKey(s.charAt(end))) {
@@ -75,32 +89,6 @@ public class Problem_3 {
                 len = Math.max(len, end - start);
                 map.put(s.charAt(end), end);
 
-            }
-            return len;
-        }
-    }
-
-    /**
-     * Time - O(n)
-     * Space - O(n)
-     */
-
-    public static class Solution3 {
-        public int lengthOfLongestSubstring(String s) {
-            int len = 0;
-            if (s.isEmpty()) return len;
-
-            Set<Character> set = new HashSet<>();
-
-            for (int start=0, end=0; end < s.length();) {
-                char c = s.charAt(end);
-                if (!set.contains(c)) {
-                    set.add(c);
-                    end++;
-                    len = Math.max(len, end - start);
-                } else {
-                    set.remove(s.charAt(start++));
-                }
             }
             return len;
         }

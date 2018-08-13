@@ -83,9 +83,7 @@ public class Problem_380 {
 
         /** Get a random element from the set. */
         public int getRandom() {
-            int max = list.size();
-            int min = 0;
-            int ind = (int)(Math.random() * (max - min) + min);
+            int ind = (int)(Math.random() * (list.size()));
             return list.get(ind);
         }
     }

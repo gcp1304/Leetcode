@@ -1,5 +1,7 @@
 package com.chandra.problems;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -17,9 +19,41 @@ import java.util.List;
  ]
  */
 public class Problem_15 {
-    public static class Solution1 {
-        public List<List<Integer>> threeSum(int[] nums) {
-            return null;
+
+    public static class Solution_1 {
+        /* Time Complexity:
+            Sort - O(nlogn)
+            while loop inside for loop provies O(n*n)
+
+            Total = O(nlogn) + O(n*n) ~ O(n*n)
+         */
+        public static List<List<Integer>> threeSum(int[] nums) {
+            List<List<Integer>> triplets = new ArrayList<>();
+            Arrays.sort(nums);
+            for (int i = 0; i < nums.length-2;i++) {
+                if (i > 0 && nums[i] == nums[i - 1]){ // this is to avoid duplicate triplets
+                    continue;
+                }
+                int left = i+1;
+                int right = nums.length-1;
+                while (left < right) {
+                    int twoSum = nums[left] + nums[right];
+                    int threeSum = nums[i] + twoSum;
+                    if (threeSum == 0) triplets.add(Arrays.asList(nums[i], nums[left++], nums[right--]));
+                    else if (threeSum > 0) right--;
+                    else left++;
+                }
+            }
+
+            return triplets;
         }
     }
+
+    public static void main(String[] args) {
+        int[] nums = {-1, 0, 1, 2, -1, -4};
+        for (List<Integer> triplet : Solution_1.threeSum(nums)) {
+            System.out.println(triplet.toString());
+        }
+    }
+
 }

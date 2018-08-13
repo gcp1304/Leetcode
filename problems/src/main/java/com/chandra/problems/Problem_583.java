@@ -1,6 +1,23 @@
 package com.chandra.problems;
 
 /**
+ * 583. Delete Operation for Two Strings
+ *
+ * Given two words word1 and word2, find the minimum number of steps required to make word1 and word2 the same, where in each step you can delete one character in either string.
+
+ Example 1:
+ Input: "sea", "eat"
+ Output: 2
+ Explanation: You need one step to make "sea" to "ea" and another step to make "eat" to "ea".
+ Note:
+ The length of given words won't exceed 500.
+ Characters in given words can only be lower-case letters.
+ *
+ *
+ *
+ *
+ *
+ *
  * Deletion Distance
  * The deletion distance of two strings is the minimum number of characters you need to delete in the
  * two strings in order to get the same string. For instance, the deletion distance between "heat" and "hit" is 3:
@@ -29,7 +46,7 @@ package com.chandra.problems;
  * [input] string str2
  * [output] integer
  */
-public class DeletionDistance {
+public class Problem_583 {
 
 
     /**
@@ -103,11 +120,11 @@ public class DeletionDistance {
 
     public static void main(String[] args) {
 
-        DeletionDistance.Solution_1 solution_1 = new Solution_1();
-        DeletionDistance.Solution_2 solution_2 = new Solution_2();
+        Problem_583.Solution_1 solution_1 = new Solution_1();
+        Problem_583.Solution_2 solution_2 = new Solution_2();
 
         System.out.println(solution_1.deletionDistance("ab", "ba")); // 2
 
-        System.out.println(solution_2.deletionDistance("ab", "ba")); // 2
+        System.out.println(solution_2.deletionDistance("dinitrophenylhydrazine", "acetylphenylhydrazine")); // 2
     }
 }

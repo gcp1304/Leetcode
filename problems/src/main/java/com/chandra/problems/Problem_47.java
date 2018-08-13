@@ -28,7 +28,7 @@ public class Problem_47 {
 
      So, how to skip? Here we use a boolean array called added to keep track of which element has been added
      to the curPerm list. Consider two elements with identical value, if the former one hasn't been added to curPerm,
-     then adding the later one to curPerm would reault in duplicate subsets in res list.
+     then adding the later one to curPerm would result in duplicate subsets in res list.
      (Since we are visting the elements in order, at the moment we visit the later element, all valid subsets
      containing the former one at the current condition must have already been added to res list).
      Thus we should skip the later duplicate element when its former one has not been added to tmp.

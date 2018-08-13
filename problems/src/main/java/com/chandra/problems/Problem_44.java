@@ -50,6 +50,14 @@ package com.chandra.problems;
  */
 public class Problem_44 {
 
+   /** We define the state P[i][j] to be whether s[0..i) matches p[0..j). The state equations are as follows:
+    P[i][j] = P[i - 1][j - 1] && (s[i - 1] == p[j - 1] || p[j - 1] == '?'), if p[j - 1] != '*';
+    P[i][j] = P[i][j - 1] || P[i - 1][j], if p[j - 1] == '*'.
+
+ Equation 1). means that if p[j-1] is not *, f(i,j) is determined by if s[0:i-2] matches p[0:j-2] and if (s[i-1]==p[j-1] or p[j-1]=='?').
+ Equation 2). means that if p[j-1] is *, f(i,j) is true if either f(i,j-1) is true: s[0:i-1] matches p[0:j-2] and * is not used here;
+ or f(i-1,j) is true: s[0:i-2] matches p[0:j-1] and * is used to match s[i-1].
+**/
     public static class Solution_1 {
         public boolean isMatch(String s, String p) {
             int sLen = s.length(), pLen = p.length();
@@ -68,8 +76,8 @@ public class Problem_44 {
             }
 
             // fill in table with bottom-up approach
-            for (int i = 1; i < sLen; i++) {
-                for (int j = 1; j < pLen; j++) {
+            for (int i = 1; i < lookup.length; i++) {
+                for (int j = 1; j < lookup[0].length; j++) {
 
                     // Two cases if we see a '*'
                     // a) We ignore '*'' character and move

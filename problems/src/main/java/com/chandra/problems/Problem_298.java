@@ -60,8 +60,7 @@ public class Problem_298 {
         public void longestConsecutiveHelper(TreeNode root, int target, int count) {
             if (root == null) return;
 
-            if (root.val == target) count++;
-            else count = 1;
+            count = (root.val == target) ? count + 1 : 1;
 
             len = Math.max(len, count);
             longestConsecutiveHelper(root.left, root.val + 1, count);

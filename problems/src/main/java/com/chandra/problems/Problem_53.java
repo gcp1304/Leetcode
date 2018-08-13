@@ -60,7 +60,7 @@ public class Problem_53 {
                 maxSum = Math.max(curSum, maxSum);
             }
 
-            return allNegative == true ? maxNegative : maxSum;
+            return allNegative ? maxNegative : maxSum;
         }
     }
 }

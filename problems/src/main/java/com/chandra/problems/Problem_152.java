@@ -24,7 +24,7 @@ public class Problem_152 {
             /*
             We know if we multiply two numbers, the product will be big if the numbers are both big in magnitude and are of same sign.
 
-Two large negative numbers produce a large positive product
+    Two large negative numbers produce a large positive product
 Two large positive numbers produce a large positive product
 A large positive and a large negative number produce a large negative product (which may or may not be used further with another negative number to produce a large positive product)
 Thus, to find the maximum product in a subarray, we have to keep track of both local minimum product as well as local maximum product.

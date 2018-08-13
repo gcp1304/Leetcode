@@ -58,4 +58,28 @@ public class Problem_161 {
             return Math.abs(s.length() - t.length()) == 1; // corner case: ""
         }
     }
+
+    public static class Solution_3 {
+        /**
+         * Dynamic Programming
+         *
+         * Calculate the total distance between two strings and check if the distance == 1 or not
+         */
+        public boolean isEditDistanceOne(String s1, String s2) {
+            int[][] dp = new int[s1.length()+1][s2.length()+1];
+            for (int i=0;i<dp.length;i++) {
+                for (int j = 0; j < dp[0].length; j++) {
+                    if (i == 0) dp[i][j] = j;
+                    else if (j == 0) dp[i][j] = i;
+                    else if (s1.charAt(i-1) == s2.charAt(j-1)) dp[i][j] = dp[i-1][j-1];
+                    else {
+                        dp[i][j] = 1 + Math.min(dp[i-1][j-1], Math.min(dp[i-1][j], dp[i][j-1]));
+                    }
+                }
+            }
+
+            return dp[s1.length()][s2.length()] == 1;
+
+        }
+    }
 }

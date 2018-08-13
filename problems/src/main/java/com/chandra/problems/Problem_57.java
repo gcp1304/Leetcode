@@ -67,4 +67,9 @@ public class Problem_57 {
 
         }
     }
+
+    public static void main(String[] args) {
+        List<Interval> intervals = new ArrayList<>();
+
+    }
 }

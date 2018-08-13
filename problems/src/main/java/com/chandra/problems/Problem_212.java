@@ -1,7 +1,6 @@
 package com.chandra.problems;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 /**
  * 212. Word Search II

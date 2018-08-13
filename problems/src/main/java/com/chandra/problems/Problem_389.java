@@ -1,8 +1,5 @@
 package com.chandra.problems;
 
-import java.util.Comparator;
-import java.util.PriorityQueue;
-
 /**
  * 389. Find the Difference
  *
@@ -27,12 +24,20 @@ import java.util.PriorityQueue;
 public class Problem_389 {
     public static class Solution_1 {
         public char findTheDifference(String s, String t) {
-
-
             int res = 0;
             for (int i=0;i<t.length();i++) res += t.charAt(i);
             for (int i=0;i<s.length();i++) res -= s.charAt(i);
             return (char)res;
+        }
+    }
+
+    public static class Solution_2 {
+        public char findTheDifference(String s, String t) {
+            char c = 0;
+            for (char ch : s.toCharArray()) c ^= ch;
+            for (char ch : t.toCharArray()) c ^= ch;
+
+            return c;
         }
     }
 }

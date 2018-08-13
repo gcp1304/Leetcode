@@ -1,7 +1,5 @@
 package com.chandra.problems;
 
-import java.util.HashMap;
-
 /**
  * 12. Integer to Roman
  *

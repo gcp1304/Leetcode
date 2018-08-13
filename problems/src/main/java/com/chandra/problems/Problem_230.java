@@ -82,7 +82,7 @@ public class Problem_230 {
                 }
             }
 
-            return - 1;
+            return -1;
         }
     }
 

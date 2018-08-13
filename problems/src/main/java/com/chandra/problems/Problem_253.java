@@ -22,7 +22,12 @@ public class Problem_253 {
             if (intervals == null || intervals.length == 0) return 0;
 
             // sort intervals by start time
-            Arrays.sort(intervals, Comparator.comparingInt(o -> o.start));
+            Arrays.sort(intervals, new Comparator<Interval>() {
+                @Override
+                public int compare(Interval o1, Interval o2) {
+                    return o1.start - o2.start;
+                }
+            });
 
             // PQ with min heap to store the end times meeting with overlap schedule
             PriorityQueue<Integer> pq = new PriorityQueue<>();

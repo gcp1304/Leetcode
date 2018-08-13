@@ -8,7 +8,7 @@ import java.util.Map;
 /**
  * 30. Substring with Concatenation of All Words
  *
- * You are given a string, s, and a list of words, words, that are all of the same length.
+ * You are given a string, s, and a list of words, that are all of the same length.
  * Find all starting indices of substring(s) in s that is a concatenation of each word in words exactly once and without any intervening characters.
  For example, given:
  s: "barfoothefoobarman"
@@ -39,6 +39,7 @@ public class Problem_30 {
             int begin, end, counter;
             // Sliding window
             for (int i=0;i<wordLength;i++) {
+                // whenever we move sliding window we reset everything
                 curMap.clear();
                 curMap.putAll(map);
                 counter = map.size();
