@@ -90,6 +90,6 @@ public class Problem_10 {
         String s = "aa";
         String p = "a*";
 
-        System.out.println(Solution_2.isMatch(s, p));
+        System.out.println(Solution2.isMatch(s, p));
     }
 }
