@@ -9,7 +9,7 @@ public class Problem_3Test {
 
     private Problem_3.Solution1 solution1;
     private Problem_3.Solution2 solution2;
-    private Problem_3.Solution3 solution3;
+  
 
     String input = "pwwkew";
     int expectedResult = 3;
@@ -18,7 +18,7 @@ public class Problem_3Test {
     public void setUp() throws Exception {
         solution1 = new Problem_3.Solution1();
         solution2 = new Problem_3.Solution2();
-        solution3 = new Problem_3.Solution3();
+       
     }
 
     @Test
@@ -35,10 +35,5 @@ public class Problem_3Test {
         assertEquals(expectedResult, solution2Result);
     }
 
-    @Test
-    public void solution3Test() throws Exception {
-        int solution3Result = solution3.lengthOfLongestSubstring(input);
-
-        assertEquals(expectedResult, solution3Result);
-    }
+  
 }
