@@ -41,7 +41,7 @@ public class Problem_10 {
         }
     }
 
-    public static class Solution_2 {
+    public static class Solution2 {
 
         // text = aa
         // pat = a*
