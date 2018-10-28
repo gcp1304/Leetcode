@@ -23,32 +23,40 @@ import java.util.Arrays;
 public class Problem_New {
     public static class Solution_1 {
         // Time - O(n)
-        public int minimumNumberOfTokens(int[] ranks) {
+        public static int minimumNumberOfTokens(int[] ranks) {
             int minTokens = 0;
             if (ranks == null || ranks.length == 0) return minTokens;
 
             int[] tokens = new int[ranks.length];
-            //System.out.println("I/P: " + Arrays.toString(ranks));
             Arrays.fill(tokens, 1);
-            tokens[0] = 1; // first person
             for (int i = 1; i < ranks.length; i++) {
                 if (ranks[i] > ranks[i - 1]) tokens[i] = tokens[i - 1] + 1;
             }
 
-            //System.out.println("L/R: " + Arrays.toString(tokens));
-
-
-            minTokens += tokens[ranks.length-1];
             for (int j = ranks.length - 2; j >= 0; j--) {
-                if (ranks[j] > ranks[j+1]) tokens[j] = tokens[j+1]+1 > tokens[j] ? tokens[j+1]+1 : tokens[j];
-                else if (ranks[j] == ranks[j+1]) tokens[j] = tokens[j+1];
-
-                minTokens += tokens[j];
+                if (ranks[j] > ranks[j+1] && tokens[j+1]+1 > tokens[j]) {
+                    tokens[j] = tokens[j+1]+1;
+                }
+                else if (ranks[j] == ranks[j+1]) {
+                    tokens[j] = /*This is for the case [1,2,2,3]*/tokens[j+1] = Math.max(tokens[j], tokens[j+1]);
+                }
             }
 
-            //System.out.println("R/L: " + Arrays.toString(tokens) + " -> Actual Output");
-            System.out.println("Minimum Tokens: " + minTokens);
+            for (int i = 1; i < ranks.length; i++) {
+                if (ranks[i] > ranks[i - 1]) tokens[i] = tokens[i - 1] + 1;
+            }
+
+            // This is for the case [1,2,2,3]
+            for (int i = 0; i < tokens.length; i++) {
+                minTokens += tokens[i];
+            }
+
             return minTokens;
+        }
+
+        public static void main(String[] args) {
+            int[] ranks = new int[]{10, 8, 8, 5, 3, 4};
+            System.out.println(Solution_1.minimumNumberOfTokens(ranks));
         }
     }
 }

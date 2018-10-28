@@ -22,7 +22,7 @@ import java.util.List;
 
 public class Problem_17 {
     public static class Solution1 {
-        public List<String> letterCombinations(String digits) {
+        public static List<String> letterCombinations(String digits) {
             LinkedList<String> ans = new LinkedList<>();
             if (digits.isEmpty()) return ans;
 
@@ -45,8 +45,8 @@ public class Problem_17 {
     }
 
     public static class Solution_2 {
-        //DFS / backtracking
-        public List<String> letterCombinations(String digits) {
+        //DFS
+        public static List<String> letterCombinations(String digits) {
             String[] mapping = new String[] {"", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
             List<String> res = new ArrayList<>();
             if (digits.length() == 0) return res;
@@ -54,7 +54,7 @@ public class Problem_17 {
             return res;
         }
 
-        private void dfs(List<String> res, String temp, String[] mapping, String digits, int start) {
+        private static void dfs(List<String> res, String temp, String[] mapping, String digits, int start) {
             if (start == digits.length()) {
                 res.add(temp);
                 return;
@@ -64,5 +64,9 @@ public class Problem_17 {
                 dfs(res, temp + mapping[digits.charAt(start) - '0'].charAt(i), mapping, digits, start+1);
             }
         }
+    }
+
+    public static void main(String[] args) {
+        System.out.println(Solution1.letterCombinations("59").toString());
     }
 }
