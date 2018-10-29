@@ -33,29 +33,19 @@ public class Problem_New {
                 if (ranks[i] > ranks[i - 1]) tokens[i] = tokens[i - 1] + 1;
             }
 
+            minTokens = tokens[ranks.length - 1];
             for (int j = ranks.length - 2; j >= 0; j--) {
-                if (ranks[j] > ranks[j+1] && tokens[j+1]+1 > tokens[j]) {
-                    tokens[j] = tokens[j+1]+1;
+                if (ranks[j] > ranks[j+1]) {
+                    tokens [j] = Math.max(tokens[j], tokens[j+1]+1);
                 }
-                else if (ranks[j] == ranks[j+1]) {
-                    tokens[j] = /*This is for the case [1,2,2,3]*/tokens[j+1] = Math.max(tokens[j], tokens[j+1]);
-                }
-            }
-
-            for (int i = 1; i < ranks.length; i++) {
-                if (ranks[i] > ranks[i - 1]) tokens[i] = tokens[i - 1] + 1;
-            }
-
-            // This is for the case [1,2,2,3]
-            for (int i = 0; i < tokens.length; i++) {
-                minTokens += tokens[i];
+                minTokens += tokens[j];
             }
 
             return minTokens;
         }
 
         public static void main(String[] args) {
-            int[] ranks = new int[]{10, 8, 8, 5, 3, 4};
+            int[] ranks = new int[]{1,2,2};
             System.out.println(Solution_1.minimumNumberOfTokens(ranks));
         }
     }
