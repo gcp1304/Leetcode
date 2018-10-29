@@ -6,19 +6,23 @@ import java.util.Arrays;
 /**
  * Minimum number of tokens
  * <p>
- * Given an array of unsorted integers, each integer value representing the rank of a person.
- * Write a function that returns the minimum number of tokens you have to give to people in the line depending on the
- * rank of each person satisfying the below conditions
- * <p>
+ * There are N people standing in a line. Each person is assigned a rank.
+ *
+ * You are handing out tokens to people standing in line subjected to following conditions
+ *
  * 1. Every person must receive at least one token
- * 2. If two people, p1 and p2, are adjacent, and rank(p2)>rank(p1), then p2 must receive more tokens than p1.
- * 3. If two people, p1 and p2, are adjacent, and have rank(p1 = rank(p2), then both p1 and p2 must receive same number of tokens
- * <p>
+ * 2. Person with higher ranks gets more tokens than their neighbors
+ *
+ * What is the minimum number of tokens you need to handout?
+ *
  * E.g: Input : [2, 4, 6, 7, 10, 2]
  * Output: 16
- * <p>
- * Input : [10, 8, 8, 5, 3, 2]
- * Output: 19
+ *
+ *
+ * Input: [1,2,2]
+ * Output: 4
+ * Explanation: You can allocate to the first, second and third person with 1, 2, 1 tokens respectively.
+ * The third person gets 1 token because it satisfies the above two conditions.
  */
 public class Problem_New {
     public static class Solution_1 {
