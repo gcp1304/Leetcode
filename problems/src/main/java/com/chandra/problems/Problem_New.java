@@ -23,6 +23,7 @@ import java.util.Arrays;
 public class Problem_New {
     public static class Solution_1 {
         // Time - O(n)
+        //https://leetcode.com/problems/candy/solution/
         public static int minimumNumberOfTokens(int[] ranks) {
             int minTokens = 0;
             if (ranks == null || ranks.length == 0) return minTokens;
